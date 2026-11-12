@@ -32,7 +32,8 @@
   <div class="card"><table>
     <tr><th>Strategy</th><th>TF</th><th>Trades</th><th>Win %</th><th>Net pts</th><th>Profit factor</th><th>t-stat</th><th>1st half / 2nd half</th></tr>
     <tr><td>A] SVR NIFTY (target BC)</td><td>15m</td><td>73</td><td>77%</td><td class="up">+688</td><td>1.8</td><td>1.9</td><td>+357 / +331</td></tr>
-    <tr><td>A] SVR CRUDE (target nearer R1/PDH)</td><td>15m</td><td>23</td><td>52%</td><td class="up">+1,162</td><td>2.8</td><td>1.9</td><td>+704 / +458</td></tr>
+    <tr><td>A] SVR CRUDE (target nearer R1/PDH), 09:00-15:30 only (live rule)</td><td>15m</td><td>13</td><td>54%</td><td class="up">+529</td><td>4.2</td><td>1.8</td><td>+330 / +199</td></tr>
+    <tr><td class="warn">&nbsp;&nbsp;same, full MCX session to 23:00 (original research)</td><td>15m</td><td>23</td><td>52%</td><td>+1,162</td><td>2.8</td><td>1.9</td><td>+704 / +458</td></tr>
     <tr><td>B] RVR NIFTY (CPR width &lt; 0.20%)</td><td>60m</td><td>20</td><td>55%</td><td class="up">+915</td><td>3.2</td><td>1.7</td><td>+650 / +265</td></tr>
   </table></div>
 
@@ -40,7 +41,7 @@
   <div class="card"><table>
     <tr><th>Strategy</th><th>Option</th><th>Trades</th><th>Win %</th><th>Net Rs</th><th>Profit factor</th><th>Worst Rs</th><th>Max DD Rs</th><th>Avg premium</th></tr>
     <tr><td>A] SVR NIFTY</td><td>ATM CE, lot 65</td><td>73</td><td>71%</td><td class="up">+21,835</td><td>1.8</td><td>-3,286</td><td>8,682</td><td>121</td></tr>
-    <tr><td>A] SVR CRUDEOILM</td><td>ATM CE, lot 10</td><td>23</td><td>52%</td><td class="up">+5,364</td><td>2.3</td><td>-879</td><td>879</td><td>289</td></tr>
+    <tr><td>A] SVR CRUDEOILM (full session to 23:00)</td><td>ATM CE, lot 10</td><td>23</td><td>52%</td><td class="up">+5,364</td><td>2.3</td><td>-879</td><td>879</td><td>289</td></tr>
     <tr><td>B] RVR NIFTY</td><td>ATM PE, lot 65</td><td>20</td><td>55%</td><td class="up">+44,184</td><td>4.0</td><td>-3,098</td><td>5,708</td><td>88</td></tr>
   </table></div>
   <p class="warn">Option premiums are a Black-76 model (NIFTY IV = India VIX, crude IV = 20-day realized vol, IV held constant), because Dhan's expired-option history endpoint rejected every request on 2026-11-12. 8 of RVR's 20 trades were on expiry day (+Rs 18.5k), where the model is least reliable. This paper engine records real option fills - judge the strategy on those.</p>

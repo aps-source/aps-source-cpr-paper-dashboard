@@ -119,9 +119,9 @@
     </div>
   </div>
   <details class="rules">
-    <summary>Strategy details &middot; algo runs NIFTY 08:59&ndash;15:40, CRUDEOILM 08:59&ndash;23:35 IST (off at other times) &middot; data refreshes every 1 min</summary>
+    <summary>Strategy details &middot; algo runs 09:00&ndash;15:40 IST on NSE trading days only (off at other times and on NSE holidays) &middot; data refreshes every 1 min</summary>
     <ul>
-      <li><b>A] SVR (Support-VWAP Reclaim)</b>, long, 15-min bars, NIFTY + CRUDEOILM. Price touches the S1/PDL zone, then a bar closes above S1/PDL and above VWAP while still below the CPR. Buy the ATM CE. Stop: 15-min close below S1/PDL. Target: CPR bottom (BC) for NIFTY, nearer of R1/PDH for CRUDEOILM. Time exit 15:10 (NIFTY) / 23:00 (CRUDEOILM).</li>
+      <li><b>A] SVR (Support-VWAP Reclaim)</b>, long, 15-min bars, NIFTY + CRUDEOILM. Price touches the S1/PDL zone, then a bar closes above S1/PDL and above VWAP while still below the CPR. Buy the ATM CE. Stop: 15-min close below S1/PDL. Target: CPR bottom (BC) for NIFTY, nearer of R1/PDH for CRUDEOILM. Time exit 15:10 (NIFTY) / 15:30 (CRUDEOILM, last entry 15:15).</li>
       <li><b>B] RVR (Resistance-VWAP Reclaim)</b>, short, NIFTY only, 60-min bars, only when CPR width &lt; 0.20%. Price touches the CPR (BC), then a bar closes below S1/PDL and below VWAP. Buy the ATM PE. Stop: 60-min close above S1/PDL. No target, time exit 15:10.</li>
       <li>Max 2 entries per strategy per day. Levels from the previous session's high/low/close. Paper only: fills at live option LTP, 1 lot (NIFTY 65, CRUDEOILM 10 bbl). No real orders.</li>
     </ul>
@@ -262,9 +262,9 @@ async function load(){
   document.getElementById('cpr').innerHTML = cprCard('NIFTY',M.NIFTY) + cprCard('CRUDEOILM',M.CRUDEOILM);
   const c = d.checklist||{};
   document.getElementById('sod').innerHTML =
-    li(c.weekday,'Trading weekday') + li(c.quotes_ok,'Quote feed OK (Dhan token valid)') + li(c.oc_ok,'NIFTY option chain OK') +
-    li(c.nifty_window,'NIFTY algo window 08:59-15:40') + li(c.nifty_levels,'NIFTY previous-day levels loaded') +
-    li(c.crude_window,'CRUDEOILM algo window 08:59-23:35') + li(c.crude_levels,'CRUDEOILM previous-day levels loaded') +
+    li(c.weekday,'NSE trading day (weekday, not a holiday)') + li(c.quotes_ok,'Quote feed OK (Dhan token valid)') + li(c.oc_ok,'NIFTY option chain OK') +
+    li(c.nifty_window,'NIFTY algo window 09:00-15:40') + li(c.nifty_levels,'NIFTY previous-day levels loaded') +
+    li(c.crude_window,'CRUDEOILM algo window 09:00-15:40') + li(c.crude_levels,'CRUDEOILM previous-day levels loaded') +
     li(c.rvr_narrow_day,'Narrow CPR today (&lt; 0.20%) &rarr; B] RVR active');
   const S = d.strategies||{};
   const order = ['SVR_NIFTY','RVR_NIFTY','SVR_CRUDEOILM'];

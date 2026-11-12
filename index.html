@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CPR Paper</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:#eceff8; --surface-1:#ffffff; --surface-2:#f3f5fb;
+    --text-primary:#0e1320; --text-secondary:#4f5a74; --text-muted:#76829c;
+    --gridline:#e2e7f1; --border:rgba(14,19,32,0.10);
+    --shadow:0 1px 2px rgba(14,19,32,0.06), 0 8px 24px rgba(40,50,110,0.08);
+    --brand-a:#4338ca; --brand-b:#7c3aed; --brand-c:#0d9488; --accent:#4f46e5;
+    --call:#2563eb; --put:#d6336c;
+    --good:#12a150; --warning:#c77d00; --critical:#dc3545;
+    --slate-1:#1b2340; --slate-2:#2d3a66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page:#090c14; --surface-1:#131a29; --surface-2:#1a2336;
+      --text-primary:#eef1f9; --text-secondary:#a0abc4; --text-muted:#7f8aa3;
+      --gridline:#253048; --border:rgba(238,241,249,0.11);
+      --shadow:0 1px 2px rgba(0,0,0,0.4), 0 10px 28px rgba(0,0,0,0.35);
+      --brand-a:#4f46e5; --brand-b:#8b5cf6; --brand-c:#14b8a6; --accent:#9b8cf3;
+      --call:#4a8cf0; --put:#e0578a;
+      --good:#2bc85a; --warning:#f2b636; --critical:#f0645f;
+      --slate-1:#0f1630; --slate-2:#26305a;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { font-size: clamp(15px, 0.55vw + 9px, 19px); }
+  body { margin:0; color:var(--text-primary); font-family: system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.4;
+    background: radial-gradient(1100px 480px at 8% -8%, color-mix(in srgb, var(--brand-b) 16%, transparent), transparent 70%),
+      radial-gradient(900px 480px at 100% 0%, color-mix(in srgb, var(--brand-c) 14%, transparent), transparent 70%), var(--page);
+    background-attachment: fixed; }
+  b { font-variant-numeric: tabular-nums; }
+  a { color: var(--accent); }
+  .hero { background: linear-gradient(115deg, var(--brand-a) 0%, var(--brand-b) 52%, var(--brand-c) 100%);
+    color:#fff; padding:1.05rem clamp(14px,2vw,32px) 0.9rem; box-shadow:0 6px 26px rgba(67,56,202,0.28); }
+  .hero-inner { max-width:1500px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px 24px; flex-wrap:wrap; }
+  .brand { display:flex; align-items:center; gap:0.9rem; }
+  .logo { width:2.5rem; height:2.5rem; border-radius:0.8rem; background:rgba(255,255,255,0.18); display:grid; place-items:center; font-size:1.35rem; }
+  h1 { font-size:1.45rem; margin:0; font-weight:800; letter-spacing:-0.015em; }
+  .tag { font-size:0.86rem; opacity:0.88; margin-top:1px; }
+  .hero-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .hero-pill { background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.28); padding:0.32rem 0.75rem; border-radius:999px; font-size:0.82rem; color:#fff; text-decoration:none; font-variant-numeric:tabular-nums; }
+  a.btn { background:#fff; color:var(--brand-a); text-decoration:none; font-weight:700; font-size:0.88rem; padding:0.45rem 0.95rem; border-radius:999px; box-shadow:0 2px 10px rgba(0,0,0,0.18); }
+  .live-clock { text-align:right; font-variant-numeric:tabular-nums; }
+  .live-clock .d { font-size:0.86rem; font-weight:700; } .live-clock .t { font-size:1.15rem; font-weight:800; }
+  .st-pill { display:inline-flex; align-items:center; gap:0.35rem; font-weight:700; font-size:0.78rem; padding:0.15rem 0.55rem; border-radius:999px; }
+  .st-pill.live { background:color-mix(in srgb, var(--good) 16%, var(--surface-1)); color:var(--good); }
+  .st-pill.stale { background:color-mix(in srgb, var(--critical) 16%, var(--surface-1)); color:var(--critical); }
+  .st-pill.off { background:color-mix(in srgb, var(--text-muted) 16%, var(--surface-1)); color:var(--text-muted); }
+  .hero .st-pill { background:rgba(255,255,255,0.2); color:#fff; }
+  .dot { display:inline-block; width:0.55rem; height:0.55rem; border-radius:50%; background:currentColor; flex:none; }
+  .st-pill.live .dot { animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow:0 0 0 0 color-mix(in srgb, currentColor 55%, transparent);} 60% { box-shadow:0 0 0 6px transparent;} }
+  .rules { max-width:1500px; margin:0.55rem auto 0; font-size:0.83rem; }
+  .rules summary { cursor:pointer; font-weight:600; }
+  .rules ul { margin:0.3rem 0 0; padding-left:1.1rem; }
+  .page { max-width:1500px; margin:0 auto; padding:1.1rem clamp(14px,2vw,32px) 2rem; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(150px,100%),1fr)); gap:0.9rem; margin-bottom:1rem; }
+  .kpi { position:relative; overflow:hidden; background:var(--surface-1); border:1px solid var(--border); border-radius:1rem; padding:0.95rem 1.1rem; box-shadow:var(--shadow); }
+  .kpi::before { content:""; position:absolute; inset:0 auto 0 0; width:5px; background:var(--kc, var(--accent)); }
+  .kpi .k { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.07em; color:var(--text-muted); font-weight:700; }
+  .kpi .v { font-size:1.4rem; font-weight:800; letter-spacing:-0.02em; font-variant-numeric:tabular-nums; margin-top:0.1rem; line-height:1.15; }
+  .kpi .s { font-size:0.82rem; color:var(--text-secondary); margin-top:0.15rem; font-variant-numeric:tabular-nums; }
+  .kpi.good { --kc:var(--good); } .kpi.bad { --kc:var(--critical); } .kpi.warn { --kc:var(--warning); }
+  .s.good { color:var(--good); } .s.bad { color:var(--critical); }
+  .card { background:var(--surface-1); border:1px solid var(--border); border-radius:1rem; padding:1.05rem 1.2rem; box-shadow:var(--shadow); margin-bottom:1rem; min-width:0; }
+  .card h2 { font-size:0.74rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin:0 0 0.7rem; font-weight:800; }
+  .card h3 { font-size:0.95rem; margin:0 0 0.4rem; }
+  .split { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:0.9rem; }
+  .lvl-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:0.55rem; }
+  .lvl { border-radius:0.75rem; padding:0.5rem 0.7rem; background:var(--surface-2); border-left:4px solid var(--c, var(--text-muted)); }
+  .lvl .l { font-size:0.68rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; }
+  .lvl .n { font-size:1.2rem; font-weight:800; font-variant-numeric:tabular-nums; }
+  .lvl .d { font-size:0.72rem; color:var(--text-secondary); }
+  .lvl.res { --c:var(--critical); } .lvl.mp { --c:var(--warning); } .lvl.sup { --c:var(--good); } .lvl.pcr { --c:var(--brand-c); } .lvl.spot { --c:var(--accent); } .lvl.cpr { --c:#1e88e5; } .lvl.pd { --c:var(--text-primary); }
+  table { width:100%; border-collapse:collapse; font-size:0.86rem; }
+  td,th { padding:0.3rem 0.4rem; text-align:right; border-bottom:1px solid var(--gridline); font-variant-numeric:tabular-nums; }
+  td:first-child, th:first-child { text-align:left; }
+  th { font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); }
+  .tbl { overflow-x:auto; }
+  .up { color:var(--good); } .dn { color:var(--critical); } .nt { color:var(--warning); }
+  .chk { padding:0; margin:0; }
+  .chk li { list-style:none; padding:0.28rem 0; border-top:1px solid var(--gridline); font-size:0.88rem; color:var(--text-secondary); }
+  .chk li:first-child { border-top:none; }
+  .badge { display:inline-block; font-size:0.72rem; font-weight:700; padding:0.1rem 0.5rem; border-radius:999px; background:var(--surface-2); color:var(--text-secondary); margin-left:0.3rem; }
+  .badge.pos { background:color-mix(in srgb, var(--good) 18%, var(--surface-1)); color:var(--good); }
+  .chart { width:100%; height:460px; }
+  .card:fullscreen { overflow:auto; } .card:fullscreen .chart { height:calc(100vh - 4rem); }
+  .full { float:right; font-size:0.78rem; font-weight:700; margin-left:0.8rem; }
+  footer { color:var(--text-muted); font-size:0.8rem; max-width:1500px; margin:0 auto; padding:0 clamp(14px,2vw,32px) 2rem; }
+  @media (max-width:700px){ .chart{height:320px} }
+</style>
+</head>
+<body>
+<!--main-dashboard-link--><div id="main-dashboard-link" data-mode="bar" style="box-sizing:border-box;width:100%;padding:7px 14px;background:#0f172a;font:600 12px/1.3 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;text-align:left"><a href="https://aps-source.github.io/" style="color:#e2e8f0;text-decoration:none">&#9666; Main dashboard</a></div><!--/main-dashboard-link-->
+
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <div class="logo">&#127919;</div>
+      <div>
+        <h1>CPR</h1>
+        <div class="tag">Futures data &middot; A] SVR + B] RVR &middot; paper trades in ATM options</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <span id="live" class="st-pill stale"><span class="dot"></span><span id="live-txt">&hellip;</span></span>
+      <a class="hero-pill" href="signal_log.html">Signal history</a>
+      <a class="hero-pill" href="backtest.html">Backtest</a>
+      <a class="btn" href="https://aps-source.github.io/">&#9666; Main dashboard</a>
+      <div class="live-clock"><div class="d" id="clock-d"></div><div class="t" id="clock-t"></div></div>
+    </div>
+  </div>
+  <details class="rules">
+    <summary>Strategy details &middot; algo runs NIFTY 08:59&ndash;15:40, CRUDEOILM 08:59&ndash;23:35 IST (off at other times) &middot; data refreshes every 1 min</summary>
+    <ul>
+      <li><b>A] SVR (Support-VWAP Reclaim)</b>, long, 15-min bars, NIFTY + CRUDEOILM. Price touches the S1/PDL zone, then a bar closes above S1/PDL and above VWAP while still below the CPR. Buy the ATM CE. Stop: 15-min close below S1/PDL. Target: CPR bottom (BC) for NIFTY, nearer of R1/PDH for CRUDEOILM. Time exit 15:10 (NIFTY) / 23:00 (CRUDEOILM).</li>
+      <li><b>B] RVR (Resistance-VWAP Reclaim)</b>, short, NIFTY only, 60-min bars, only when CPR width &lt; 0.20%. Price touches the CPR (BC), then a bar closes below S1/PDL and below VWAP. Buy the ATM PE. Stop: 60-min close above S1/PDL. No target, time exit 15:10.</li>
+      <li>Max 2 entries per strategy per day. Levels from the previous session's high/low/close. Paper only: fills at live option LTP, 1 lot (NIFTY 65, CRUDEOILM 10 bbl). No real orders.</li>
+    </ul>
+  </details>
+</div>
+
+<div class="page">
+  <div class="kpis" id="kpis"></div>
+
+  <div class="card">
+    <h2>Market levels &middot; NIFTY option chain</h2>
+    <div class="lvl-grid" id="oc"><div class="lvl"><div class="l">waiting</div><div class="n">&hellip;</div></div></div>
+  </div>
+
+  <div class="split" id="cpr"></div>
+
+  <div class="split">
+    <div class="card"><h2>Start-of-day checklist</h2><ul class="chk" id="sod"></ul></div>
+    <div class="card"><h2>Paper P&amp;L by strategy (all time)</h2><div class="tbl"><table id="pnl"></table></div></div>
+  </div>
+
+  <div class="card">
+    <h2>Entry condition checklist &middot; latest closed bar</h2>
+    <div class="split" id="entry"></div>
+  </div>
+  <div class="card">
+    <h2>Exit condition checklist</h2>
+    <div class="split" id="exit"></div>
+  </div>
+
+  <div class="card" id="card-NIFTY">
+    <h2>NIFTY &middot; 15-min with CPR, R1/S1, PDH/PDL, VWAP <span id="st-NIFTY"></span>
+      <a class="full" href="#" onclick="goFull('card-NIFTY');return false">full screen &#8599;</a>
+      <a class="full" href="charts/NIFTY_today.png" target="_blank">4K chart &#8599;</a></h2>
+    <div class="chart" id="chart-NIFTY"></div>
+  </div>
+  <div class="card" id="card-CRUDEOILM">
+    <h2>CRUDEOILM &middot; 15-min with CPR, R1/S1, PDH/PDL, VWAP <span id="st-CRUDEOILM"></span>
+      <a class="full" href="#" onclick="goFull('card-CRUDEOILM');return false">full screen &#8599;</a>
+      <a class="full" href="charts/CRUDEOILM_today.png" target="_blank">4K chart &#8599;</a></h2>
+    <div class="chart" id="chart-CRUDEOILM"></div>
+  </div>
+
+  <div class="card">
+    <h2>Trade log (today)</h2>
+    <div class="tbl"><table id="trades">
+      <tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th><th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>
+      <tr><td colspan="11" style="color:var(--text-muted)">No trades today</td></tr>
+    </table></div>
+  </div>
+</div>
+<footer id="updated"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+<script>
+const fmt2 = n => Number(n).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtI = n => (n>=0?'+':'')+fmt2(n);
+const fmtR = n => (n>=0?'+':'')+Number(n).toLocaleString('en-IN');
+const cls = v => v>0?'up':(v<0?'dn':'nt');
+const li = (ok,label) => `<li>${ok?'&#9989;':'&#10060;'} ${label}</li>`;
+const charts = {};
+const LV = [['PDH','#555',0],['R1','#d32f2f',0],['TC','#1e88e5',2],['P','#1e88e5',2],['BC','#1e88e5',2],['S1','#2e7d32',0],['PDL','#555',0]];
+
+function ensureChart(mk){
+  if(charts[mk]) return charts[mk];
+  const el = document.getElementById('chart-'+mk);
+  if(!el || !window.LightweightCharts) return null;
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  const c = LightweightCharts.createChart(el, {
+    layout:{background:{color:'transparent'},textColor:dark?'#7f8aa3':'#76829c'},
+    grid:{vertLines:{color:dark?'#253048':'#e2e7f1'},horzLines:{color:dark?'#253048':'#e2e7f1'}},
+    timeScale:{timeVisible:true,secondsVisible:false}, autoSize:true});
+  const s = c.addCandlestickSeries({upColor:'#12a150',downColor:'#dc3545',borderUpColor:'#12a150',borderDownColor:'#dc3545',wickUpColor:'#12a150',wickDownColor:'#dc3545'});
+  const v = c.addLineSeries({color:'#2962ff',lineWidth:2,priceLineVisible:false,lastValueVisible:false,title:'VWAP'});
+  charts[mk] = {c, s, v, lines:[], n:0};
+  return charts[mk];
+}
+// bar (start-stamped, 15-min) that contains a fill at hh:mm; a fill exactly at a bar close belongs to the bar that just closed
+function hhmmToTime(day, hhmm){ const x = Math.floor(new Date(day+'T'+hhmm+':00Z').getTime()/1000); return Math.floor((x-1)/900)*900; }
+function drawChart(mk, m, trades, day){
+  if(!m || !m.bars || !m.bars.length) return;
+  const ch = ensureChart(mk); if(!ch) return;
+  ch.s.setData(m.bars.map(b=>({time:b.time,open:b.open,high:b.high,low:b.low,close:b.close})));
+  ch.v.setData(m.bars.map(b=>({time:b.time,value:b.vwap})));
+  ch.lines.forEach(l=>ch.s.removePriceLine(l)); ch.lines = [];
+  if(m.levels) for(const [k,col,st] of LV) ch.lines.push(ch.s.createPriceLine({price:m.levels[k],color:col,lineWidth:k==='PDH'||k==='PDL'?2:1,lineStyle:st,axisLabelVisible:true,title:k}));
+  const marks = [];
+  for(const t of trades.filter(t=>t.market===mk)){
+    const long = t.side==='LONG';
+    marks.push({time:hhmmToTime(day,t.entry_t), position:long?'belowBar':'aboveBar', color:long?'#12a150':'#dc3545', shape:long?'arrowUp':'arrowDown', text:`${t.strategy.slice(3,6)} BUY ${t.strike} ${t.opt_type} @${fmt2(t.entry_px)}`});
+    if(t.exit_t) marks.push({time:hhmmToTime(day,t.exit_t), position:long?'aboveBar':'belowBar', color:'#7c3aed', shape:'circle', text:`SELL @${fmt2(t.exit_px)} ${t.reason}`});
+  }
+  marks.sort((a,b)=>a.time-b.time); ch.s.setMarkers(marks);
+  if(ch.n !== m.bars.length){ ch.c.timeScale().fitContent(); ch.n = m.bars.length; }
+}
+function goFull(id){ const el=document.getElementById(id); (el.requestFullscreen||el.webkitRequestFullscreen).call(el); }
+function tickClock(){
+  const now = new Date();
+  document.getElementById('clock-d').textContent = now.toLocaleDateString('en-IN',{timeZone:'Asia/Kolkata',weekday:'short',day:'2-digit',month:'short',year:'numeric'});
+  document.getElementById('clock-t').textContent = now.toLocaleTimeString('en-IN',{timeZone:'Asia/Kolkata',hour12:false}) + ' IST';
+}
+setInterval(tickClock,1000); tickClock();
+
+function cprCard(mk, m){
+  if(!m) return '';
+  const pill = m.live ? '<span class="st-pill live"><span class="dot"></span>LIVE</span>' : '<span class="st-pill off"><span class="dot"></span>OFF</span>';
+  if(!m.levels) return `<div class="card"><h2>${mk} CPR levels ${pill}</h2><div style="color:var(--text-muted)">Algo window ${m.window} IST &mdash; no data outside it.</div></div>`;
+  const L = m.levels, p = m.prev_day||{};
+  const t = (c,l,n,d) => `<div class="lvl ${c}"><div class="l">${l}</div><div class="n">${typeof n==='string'?n:fmt2(n)}</div><div class="d">${d||''}</div></div>`;
+  return `<div class="card"><h2>${mk} CPR levels &middot; from ${p.date||''} ${pill}</h2><div class="lvl-grid">
+    ${t('spot','LTP',m.ltp,m.underlying)}${t('spot','VWAP',m.vwap||0,'session')}
+    ${t('pd','PDH',L.PDH)}${t('res','R1',L.R1)}${t('cpr','TC',L.TC)}${t('cpr','Pivot',L.P)}${t('cpr','BC',L.BC)}${t('sup','S1',L.S1)}${t('pd','PDL',L.PDL)}
+    ${t(L.width_pct<0.2?'sup':'mp','CPR width %',L.width_pct.toFixed(3),'% of pivot '+(L.width_pct<0.2?'(narrow: RVR on)':'(RVR off)'))}
+  </div></div>`;
+}
+
+async function load(){
+  let d;
+  try{ d = await (await fetch('data.json?t='+Date.now())).json(); } catch(e){ return; }
+  const age = (Date.now() - new Date(d.updated.replace(' ','T')+'+05:30'))/60000;
+  const anyLive = Object.values(d.markets||{}).some(m=>m.live);
+  const isLive = age < 3;
+  document.getElementById('live').className = 'st-pill ' + (isLive?'live':'stale');
+  document.getElementById('live-txt').textContent = isLive ? 'LIVE' : (anyLive ? 'STALE '+Math.round(age)+'m' : 'ALGO OFF (outside window)');
+
+  if(d.indices) document.getElementById('kpis').innerHTML = d.indices.map(i=>{
+    const k = i.chg_pct>0?'good':(i.chg_pct<0?'bad':'warn');
+    return `<div class="kpi ${k}"><div class="k">${i.name}</div><div class="v">${fmt2(i.ltp)}</div><div class="s ${k==='warn'?'':k}">${fmtI(i.chg_pts)} pts &middot; ${fmtI(i.chg_pct)}%</div></div>`;}).join('');
+  if(d.oc){ const o=d.oc;
+    document.getElementById('oc').innerHTML = `
+      <div class="lvl spot"><div class="l">Spot &middot; ${o.expiry}</div><div class="n">${fmt2(o.spot)}</div><div class="d">NIFTY</div></div>
+      <div class="lvl res"><div class="l">Resistance &middot; max Call OI</div><div class="n">${o.res_strike}</div><div class="d">${fmt2(o.res_pct)}% above spot &middot; ${(o.res_oi/1e6).toFixed(1)}M OI</div></div>
+      <div class="lvl sup"><div class="l">Support &middot; max Put OI</div><div class="n">${o.sup_strike}</div><div class="d">${fmt2(o.sup_pct)}% below spot &middot; ${(o.sup_oi/1e6).toFixed(1)}M OI</div></div>
+      <div class="lvl mp"><div class="l">Max pain</div><div class="n">${o.max_pain}</div><div class="d">${fmt2(o.mp_pct)}% vs spot</div></div>
+      <div class="lvl pcr"><div class="l">PCR</div><div class="n">${Number(o.pcr).toFixed(3)}</div><div class="d">${o.suggests}</div></div>`;
+  }
+  const M = d.markets||{};
+  document.getElementById('cpr').innerHTML = cprCard('NIFTY',M.NIFTY) + cprCard('CRUDEOILM',M.CRUDEOILM);
+  const c = d.checklist||{};
+  document.getElementById('sod').innerHTML =
+    li(c.weekday,'Trading weekday') + li(c.quotes_ok,'Quote feed OK (Dhan token valid)') + li(c.oc_ok,'NIFTY option chain OK') +
+    li(c.nifty_window,'NIFTY algo window 08:59-15:40') + li(c.nifty_levels,'NIFTY previous-day levels loaded') +
+    li(c.crude_window,'CRUDEOILM algo window 08:59-23:35') + li(c.crude_levels,'CRUDEOILM previous-day levels loaded') +
+    li(c.rvr_narrow_day,'Narrow CPR today (&lt; 0.20%) &rarr; B] RVR active');
+  const S = d.strategies||{};
+  const order = ['SVR_NIFTY','RVR_NIFTY','SVR_CRUDEOILM'];
+  const names = {SVR_NIFTY:'A] SVR NIFTY',RVR_NIFTY:'B] RVR NIFTY',SVR_CRUDEOILM:'A] SVR CRUDEOILM'};
+  document.getElementById('entry').innerHTML = order.map(k=>{ const s=S[k];
+    if(!s) return `<div><h3>${names[k]}</h3><div style="color:var(--text-muted);font-size:0.86rem">not running (outside its window)</div></div>`;
+    const badge = s.paper_open ? `<span class="badge pos">IN ${s.paper_open.strike} ${s.paper_open.opt_type}</span>` : `<span class="badge">flat &middot; ${s.entries_today}/2 entries</span>`;
+    const all = s.entry_checks.length && s.entry_checks.every(x=>x[1]);
+    return `<div><h3>${s.name} <span class="badge">${s.tf}</span>${badge}</h3><ul class="chk">${s.entry_checks.map(x=>li(x[1],x[0])).join('')}</ul>
+      <div style="font-size:0.8rem;color:var(--text-muted);margin-top:0.3rem">${all?'All met on last closed bar':'Last bar '+(s.last_bar||'-').slice(11,16)}</div></div>`;}).join('');
+  document.getElementById('exit').innerHTML = order.map(k=>{ const s=S[k]; if(!s) return '';
+    const o = s.paper_open;
+    return `<div><h3>${s.name}</h3><ul class="chk">${li(!!o, o?`Position open: ${o.strike} ${o.opt_type} bought ${fmt2(o.entry_px)} at ${o.entry_t}`:'No open position')}
+      ${s.exit_rules.map(r=>`<li>&#8226; ${r}</li>`).join('')}</ul></div>`;}).join('');
+  const P = (d.paper||{}).by_strategy||{};
+  document.getElementById('pnl').innerHTML = '<tr><th>Strategy</th><th>Trades</th><th>Wins</th><th>Rs</th></tr>' +
+    (Object.keys(P).length ? Object.entries(P).map(([k,v])=>`<tr><td>${k}</td><td>${v.trades}</td><td>${v.wins}</td><td class="${cls(v.rs)}"><b>${fmtR(v.rs)}</b></td></tr>`).join('') +
+     `<tr><td><b>Total</b></td><td>${d.paper.total_trades}</td><td></td><td class="${cls(d.paper.total_rs)}"><b>${fmtR(d.paper.total_rs)}</b></td></tr>`
+     : '<tr><td colspan="4" style="color:var(--text-muted)">No closed paper trades yet</td></tr>');
+  const day = (d.updated||'').slice(0,10), T = d.trades||[];
+  for(const mk of ['NIFTY','CRUDEOILM']){
+    drawChart(mk, M[mk], T, day);
+    const m = M[mk]; document.getElementById('st-'+mk).innerHTML = m ? (m.live?'<span class="st-pill live"><span class="dot"></span>LIVE</span>':'<span class="st-pill off">OFF</span>') : '';
+  }
+  if(T.length){
+    document.getElementById('trades').innerHTML =
+      '<tr><th>Date</th><th>Expiry</th><th>Side</th><th>Strike</th><th>Entry time</th><th>Buy px</th><th>Exit time</th><th>Sell px</th><th>Reason</th><th>Diff pts</th><th>Gain/Loss Rs</th></tr>' +
+      T.map(t=>`<tr><td>${t.date}</td><td>${t.expiry}</td><td class="${t.side==='LONG'?'up':'dn'}"><b>${t.strategy} ${t.side}</b></td>
+        <td>${t.strike} ${t.opt_type}</td><td>${t.entry_t}</td><td>${fmt2(t.entry_px)}</td><td>${t.exit_t||'&mdash;'}</td>
+        <td>${t.exit_px!=null?fmt2(t.exit_px):'&mdash;'}</td><td>${t.reason}</td>
+        <td class="${cls(t.pts)}">${t.pts!=null?fmtI(t.pts):'&mdash;'}</td><td class="${cls(t.rs)}">${t.rs!=null?fmtR(t.rs):'&mdash;'}</td></tr>`).join('');
+  }
+  document.getElementById('updated').textContent = 'Data updated ' + d.updated + ' IST' +
+    (d.instrument?' | NIFTY: '+d.instrument.NIFTY+' | CRUDEOILM: '+d.instrument.CRUDEOILM:'') +
+    (d.errors&&d.errors.length?' | errors: '+d.errors.join('; '):'');
+}
+load(); setInterval(load, 60000);
+</script>
+</body>
+</html>

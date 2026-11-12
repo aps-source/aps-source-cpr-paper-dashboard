@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 15:30:00",
+ "updated": "2026-11-12 15:31:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "08:59-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "08:59-23:35",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8117,
+   "ltp": 8122,
    "prev_day": {
     "date": "2026-11-11",
     "high": 8333.0,
@@ -473,13 +473,13 @@
     {
      "time": 1794497400,
      "open": 8117.0,
-     "high": 8118.0,
-     "low": 8113.0,
-     "close": 8115.0,
-     "vwap": 8092.9
+     "high": 8123.0,
+     "low": 8110.0,
+     "close": 8122.0,
+     "vwap": 8093.03
     }
    ],
-   "vwap": 8092.9,
+   "vwap": 8093.03,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -491,7 +491,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-12 15:15:00",
+   "last_bar": "2026-11-12 15:30:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -504,7 +504,7 @@
     ],
     [
      "Close above VWAP 25,284.3",
-     false
+     true
     ],
     [
      "Close still below CPR BC 25,256.7",
@@ -565,7 +565,7 @@
    "in_position": true,
    "entries_today": 2,
    "touched": "True",
-   "last_bar": "2026-11-12 15:15:00",
+   "last_bar": "2026-11-12 15:30:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -577,7 +577,7 @@
      true
     ],
     [
-     "Close above VWAP 8,092.6",
+     "Close above VWAP 8,092.9",
      true
     ],
     [
@@ -623,35 +623,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8117,
-   "chg_pts": -67,
-   "chg_pct": -0.82
+   "ltp": 8118,
+   "chg_pts": -66,
+   "chg_pct": -0.81
   },
   {
    "name": "GOLD",
-   "ltp": 138060,
-   "chg_pts": -1656,
-   "chg_pct": -1.19
+   "ltp": 138115,
+   "chg_pts": -1601,
+   "chg_pct": -1.15
   },
   {
    "name": "SILVER",
-   "ltp": 181665,
-   "chg_pts": -2860,
-   "chg_pct": -1.55
+   "ltp": 181700,
+   "chg_pts": -2825,
+   "chg_pct": -1.53
   }
  ],
  "oc": {
   "spot": 25299.3,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 11420240,
+  "res_oi": 11447085,
   "res_pct": 2.77,
   "sup_strike": 24000.0,
-  "sup_oi": 9194055,
+  "sup_oi": 9339395,
   "sup_pct": 5.14,
   "max_pain": 25200.0,
   "mp_pct": -0.39,
-  "pcr": 0.835,
+  "pcr": 0.837,
   "suggests": "Balanced"
  },
  "trades": [],

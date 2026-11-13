@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:30:00",
+ "updated": "2026-11-13 15:31:05",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -473,13 +473,13 @@
     {
      "time": 1794583800,
      "open": 8325.0,
-     "high": 8335.0,
-     "low": 8325.0,
-     "close": 8333.0,
-     "vwap": 8351.38
+     "high": 8337.0,
+     "low": 8303.0,
+     "close": 8305.0,
+     "vwap": 8350.12
     }
    ],
-   "vwap": 8351.38,
+   "vwap": 8350.12,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -491,7 +491,7 @@
    "in_position": false,
    "entries_today": 1,
    "touched": "True",
-   "last_bar": "2026-11-13 15:15:00",
+   "last_bar": "2026-11-13 15:30:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -565,7 +565,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-13 15:15:00",
+   "last_bar": "2026-11-13 15:30:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -577,7 +577,7 @@
      true
     ],
     [
-     "Close above VWAP 8,352.0",
+     "Close above VWAP 8,351.4",
      false
     ],
     [
@@ -600,14 +600,14 @@
   "spot": 25144.3,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 14414465,
+  "res_oi": 14927185,
   "res_pct": 3.4,
   "sup_strike": 24000.0,
-  "sup_oi": 11046295,
+  "sup_oi": 11291800,
   "sup_pct": 4.55,
   "max_pain": 25100.0,
   "mp_pct": -0.18,
-  "pcr": 0.816,
+  "pcr": 0.808,
   "suggests": "Balanced"
  },
  "trades": [
@@ -729,6 +729,6 @@
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001E7BCB8C190>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1077)')))"
  ]
 }

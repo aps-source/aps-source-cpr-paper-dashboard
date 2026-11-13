@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 10:48:00",
+ "updated": "2026-11-13 10:49:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25238.5,
+   "ltp": 25241.45,
    "prev_day": {
     "date": "2026-11-12",
     "high": 25384.8,
@@ -85,11 +85,11 @@
      "open": 25230.25,
      "high": 25246.35,
      "low": 25228.5,
-     "close": 25238.65,
-     "vwap": 25168.62
+     "close": 25238.95,
+     "vwap": 25169.17
     }
    ],
-   "vwap": 25168.62,
+   "vwap": 25169.17,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -317,59 +317,59 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25238.5,
-   "chg_pts": -60.85,
-   "chg_pct": -0.24
+   "ltp": 25241.45,
+   "chg_pts": -57.9,
+   "chg_pct": -0.23
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61177.55,
-   "chg_pts": -340.95,
-   "chg_pct": -0.55
+   "ltp": 61194.6,
+   "chg_pts": -323.9,
+   "chg_pct": -0.53
   },
   {
    "name": "SENSEX",
-   "ltp": 81860.54,
-   "chg_pts": -50.47,
-   "chg_pct": -0.06
+   "ltp": 81872.45,
+   "chg_pts": -38.56,
+   "chg_pct": -0.05
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.23,
-   "chg_pts": -0.39,
-   "chg_pct": -2.35
+   "ltp": 16.25,
+   "chg_pts": -0.37,
+   "chg_pct": -2.23
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8315,
-   "chg_pts": 15,
-   "chg_pct": 0.18
+   "ltp": 8312,
+   "chg_pts": 12,
+   "chg_pct": 0.14
   },
   {
    "name": "GOLD",
-   "ltp": 137350,
-   "chg_pts": 1125,
-   "chg_pct": 0.83
+   "ltp": 137365,
+   "chg_pts": 1140,
+   "chg_pct": 0.84
   },
   {
    "name": "SILVER",
-   "ltp": 179007,
-   "chg_pts": 283,
-   "chg_pct": 0.16
+   "ltp": 179040,
+   "chg_pts": 316,
+   "chg_pct": 0.18
   }
  ],
  "oc": {
-  "spot": 25238.9,
+  "spot": 25239,
   "expiry": "2026-11-17",
   "res_strike": 26500.0,
-  "res_oi": 14135810,
+  "res_oi": 14143480,
   "res_pct": 5.0,
   "sup_strike": 25000.0,
-  "sup_oi": 14887925,
+  "sup_oi": 15023775,
   "sup_pct": 0.95,
   "max_pain": 25200.0,
   "mp_pct": -0.15,
-  "pcr": 1.017,
+  "pcr": 1.012,
   "suggests": "Balanced"
  },
  "trades": [
@@ -388,10 +388,10 @@
    "spot_entry": 25191.95,
    "bar": "2026-11-13 09:45:00",
    "exit_t": null,
-   "exit_px": 190.2,
+   "exit_px": 186.8,
    "reason": "OPEN",
-   "pts": 29.2,
-   "rs": 1898
+   "pts": 25.8,
+   "rs": 1677
   }
  ],
  "signals": [

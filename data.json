@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:26:00",
+ "updated": "2026-11-13 15:27:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8331,
+   "ltp": 8336,
    "prev_day": {
     "date": "2026-11-12",
     "high": 8318.0,
@@ -467,11 +467,11 @@
      "open": 8348.0,
      "high": 8360.0,
      "low": 8329.0,
-     "close": 8334.0,
-     "vwap": 8351.69
+     "close": 8336.0,
+     "vwap": 8351.66
     }
    ],
-   "vwap": 8351.69,
+   "vwap": 8351.66,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -604,48 +604,34 @@
   {
    "name": "SENSEX",
    "ltp": 81592.66,
-   "chg_pts": 20.43,
-   "chg_pct": 0.03
+   "chg_pts": 9.88,
+   "chg_pct": 0.01
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.49,
-   "chg_pts": -1.13,
-   "chg_pct": -6.8
+   "ltp": 15.48,
+   "chg_pts": -1.14,
+   "chg_pct": -6.86
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8331,
-   "chg_pts": 31,
-   "chg_pct": 0.37
+   "ltp": 8337,
+   "chg_pts": 37,
+   "chg_pct": 0.45
   },
   {
    "name": "GOLD",
-   "ltp": 136849,
-   "chg_pts": 624,
+   "ltp": 136848,
+   "chg_pts": 623,
    "chg_pct": 0.46
   },
   {
    "name": "SILVER",
-   "ltp": 178364,
-   "chg_pts": -360,
-   "chg_pct": -0.2
+   "ltp": 178339,
+   "chg_pts": -385,
+   "chg_pct": -0.22
   }
  ],
- "oc": {
-  "spot": 25139.2,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 14628575,
-  "res_pct": 3.42,
-  "sup_strike": 24000.0,
-  "sup_oi": 11037715,
-  "sup_pct": 4.53,
-  "max_pain": 25100.0,
-  "mp_pct": -0.16,
-  "pcr": 0.812,
-  "suggests": "Balanced"
- },
  "trades": [
   {
    "strategy": "A] SVR NIFTY",
@@ -759,10 +745,12 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ]
 }

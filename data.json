@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 11:56:00",
+ "updated": "2026-11-13 11:57:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25137.95,
+   "ltp": null,
    "prev_day": {
     "date": "2026-11-12",
     "high": 25384.8,
@@ -116,19 +116,19 @@
      "time": 1794570300,
      "open": 25160.2,
      "high": 25161.8,
-     "low": 25137.15,
-     "close": 25137.55,
-     "vwap": 25172.1
+     "low": 25134.6,
+     "close": 25143.4,
+     "vwap": 25171.89
     }
    ],
-   "vwap": 25172.1,
+   "vwap": 25171.89,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8355,
+   "ltp": null,
    "prev_day": {
     "date": "2026-11-12",
     "high": 8318.0,
@@ -243,11 +243,11 @@
      "open": 8349.0,
      "high": 8360.0,
      "low": 8330.0,
-     "close": 8355.0,
-     "vwap": 8323.78
+     "close": 8352.0,
+     "vwap": 8323.86
     }
    ],
-   "vwap": 8323.78,
+   "vwap": 8323.86,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -378,62 +378,18 @@
    ]
   }
  },
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25137.95,
-   "chg_pts": -161.4,
-   "chg_pct": -0.64
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 60961.5,
-   "chg_pts": -557.0,
-   "chg_pct": -0.91
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81528.35,
-   "chg_pts": -382.66,
-   "chg_pct": -0.47
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 16.18,
-   "chg_pts": -0.44,
-   "chg_pct": -2.65
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8355,
-   "chg_pts": 55,
-   "chg_pct": 0.66
-  },
-  {
-   "name": "GOLD",
-   "ltp": 136861,
-   "chg_pts": 636,
-   "chg_pct": 0.47
-  },
-  {
-   "name": "SILVER",
-   "ltp": 177889,
-   "chg_pts": -835,
-   "chg_pct": -0.47
-  }
- ],
  "oc": {
-  "spot": 25138.8,
+  "spot": 25142.8,
   "expiry": "2026-11-17",
   "res_strike": 26500.0,
-  "res_oi": 14368185,
-  "res_pct": 5.41,
+  "res_oi": 14304225,
+  "res_pct": 5.4,
   "sup_strike": 25000.0,
-  "sup_oi": 14539915,
-  "sup_pct": 0.55,
+  "sup_oi": 14444105,
+  "sup_pct": 0.57,
   "max_pain": 25200.0,
-  "mp_pct": 0.24,
-  "pcr": 0.951,
+  "mp_pct": 0.23,
+  "pcr": 0.948,
   "suggests": "Balanced"
  },
  "trades": [
@@ -452,10 +408,10 @@
    "spot_entry": 25191.95,
    "bar": "2026-11-13 09:45:00",
    "exit_t": null,
-   "exit_px": 125,
+   "exit_px": 127.5,
    "reason": "OPEN",
-   "pts": -36,
-   "rs": -2340
+   "pts": -33.5,
+   "rs": -2178
   }
  ],
  "signals": [
@@ -497,11 +453,13 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+ ]
 }

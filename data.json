@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:15:00",
+ "updated": "2026-11-13 15:16:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8348,
+   "ltp": 8358,
    "prev_day": {
     "date": "2026-11-12",
     "high": 8318.0,
@@ -465,13 +465,13 @@
     {
      "time": 1794582900,
      "open": 8348.0,
-     "high": 8348.0,
-     "low": 8348.0,
-     "close": 8348.0,
-     "vwap": 8352.0
+     "high": 8360.0,
+     "low": 8346.0,
+     "close": 8356.0,
+     "vwap": 8352.01
     }
    ],
-   "vwap": 8352.0,
+   "vwap": 8352.01,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -483,7 +483,7 @@
    "in_position": false,
    "entries_today": 1,
    "touched": "True",
-   "last_bar": "2026-11-13 15:00:00",
+   "last_bar": "2026-11-13 15:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -495,8 +495,8 @@
      false
     ],
     [
-     "Close above VWAP 25,141.4",
-     false
+     "Close above VWAP 25,138.9",
+     true
     ],
     [
      "Close still below CPR BC 25,263.9",
@@ -517,25 +517,11 @@
    "name": "B] RVR NIFTY",
    "market": "NIFTY",
    "tf": "60min",
-   "in_position": true,
+   "in_position": false,
    "entries_today": 1,
    "touched": "False",
-   "last_bar": "2026-11-13 14:15:00",
-   "paper_open": {
-    "strategy": "B] RVR NIFTY",
-    "market": "NIFTY",
-    "date": "2026-11-13",
-    "expiry": "2026-11-17",
-    "side": "SHORT",
-    "strike": 25100,
-    "opt_type": "PE",
-    "opt_id": 45391,
-    "seg": "NSE_FNO",
-    "entry_t": "12:16",
-    "entry_px": 151.9,
-    "spot_entry": 25088.45,
-    "bar": "2026-11-13 12:15:00"
-   },
+   "last_bar": "2026-11-13 15:15:00",
+   "paper_open": null,
    "entry_checks": [
     [
      "CPR width < 0.20% (now 0.094%)",
@@ -550,8 +536,8 @@
      true
     ],
     [
-     "Close below VWAP 25,148.7",
-     true
+     "Close below VWAP 25,138.9",
+     false
     ],
     [
      "Entries today < 2",
@@ -571,7 +557,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-13 15:00:00",
+   "last_bar": "2026-11-13 15:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -583,8 +569,8 @@
      true
     ],
     [
-     "Close above VWAP 8,351.9",
-     true
+     "Close above VWAP 8,352.0",
+     false
     ],
     [
      "Close still below CPR BC 8,150.0",
@@ -618,34 +604,48 @@
   {
    "name": "SENSEX",
    "ltp": 81592.66,
-   "chg_pts": -318.35,
-   "chg_pct": -0.39
+   "chg_pts": 83.28,
+   "chg_pct": 0.1
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.41,
-   "chg_pts": -1.21,
-   "chg_pct": -7.28
+   "ltp": 15.42,
+   "chg_pts": -1.2,
+   "chg_pct": -7.22
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8352,
-   "chg_pts": 52,
-   "chg_pct": 0.63
+   "ltp": 8358,
+   "chg_pts": 58,
+   "chg_pct": 0.7
   },
   {
    "name": "GOLD",
-   "ltp": 136849,
-   "chg_pts": 624,
-   "chg_pct": 0.46
+   "ltp": 136747,
+   "chg_pts": 522,
+   "chg_pct": 0.38
   },
   {
    "name": "SILVER",
-   "ltp": 178450,
-   "chg_pts": -274,
-   "chg_pct": -0.15
+   "ltp": 178298,
+   "chg_pts": -426,
+   "chg_pct": -0.24
   }
  ],
+ "oc": {
+  "spot": 25139.2,
+  "expiry": "2026-11-17",
+  "res_strike": 26000.0,
+  "res_oi": 14548430,
+  "res_pct": 3.42,
+  "sup_strike": 25000.0,
+  "sup_oi": 11413675,
+  "sup_pct": 0.55,
+  "max_pain": 25100.0,
+  "mp_pct": -0.16,
+  "pcr": 0.817,
+  "suggests": "Balanced"
+ },
  "trades": [
   {
    "strategy": "A] SVR NIFTY",
@@ -682,11 +682,12 @@
    "entry_px": 151.9,
    "spot_entry": 25088.45,
    "bar": "2026-11-13 12:15:00",
-   "exit_t": null,
-   "exit_px": 109.85,
-   "reason": "OPEN",
-   "pts": -42.05,
-   "rs": -2733
+   "exit_t": "15:16",
+   "exit_px": 111.5,
+   "reason": "eod",
+   "pts": -40.4,
+   "rs": -2696,
+   "spot_exit": 25139.25
   }
  ],
  "signals": [
@@ -725,6 +726,12 @@
    "strategy": "B] RVR NIFTY",
    "event": "ENTRY",
    "detail": "buy 25100 PE @ 151.90 (underlying 25,088.45, bar 12:15)"
+  },
+  {
+   "time": "2026-11-13 15:16",
+   "strategy": "B] RVR NIFTY",
+   "event": "EXIT",
+   "detail": "sell 25100 PE @ 111.50 (eod) -40.40 pts = Rs -2,696"
   }
  ],
  "paper": {
@@ -733,10 +740,15 @@
     "trades": 1,
     "wins": 0,
     "rs": -3661
+   },
+   "B] RVR NIFTY": {
+    "trades": 1,
+    "wins": 0,
+    "rs": -2696
    }
   },
-  "total_trades": 1,
-  "total_rs": -3661
+  "total_trades": 2,
+  "total_rs": -6357
  },
  "instrument": {
   "NIFTY": "ATM weekly option, expiry 2026-11-17, lot 65",
@@ -747,12 +759,10 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ]
+ "errors": []
 }

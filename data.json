@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 09:30:00",
+ "updated": "2026-11-13 09:31:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25131.95,
+   "ltp": 25128.9,
    "prev_day": {
     "date": "2026-11-12",
     "high": 25384.8,
@@ -43,20 +43,20 @@
     {
      "time": 1794562200,
      "open": 25133.4,
-     "high": 25134.15,
+     "high": 25136.8,
      "low": 25125.1,
-     "close": 25126.3,
-     "vwap": 25121.21
+     "close": 25128.45,
+     "vwap": 25121.62
     }
    ],
-   "vwap": 25121.21,
+   "vwap": 25121.62,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8301,
+   "ltp": 8309,
    "prev_day": {
     "date": "2026-11-12",
     "high": 8318.0,
@@ -97,13 +97,13 @@
     {
      "time": 1794562200,
      "open": 8301.0,
-     "high": 8306.0,
+     "high": 8310.0,
      "low": 8301.0,
-     "close": 8305.0,
-     "vwap": 8303.81
+     "close": 8309.0,
+     "vwap": 8303.88
     }
    ],
-   "vwap": 8303.81,
+   "vwap": 8303.88,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -114,10 +114,31 @@
    "tf": "15min",
    "in_position": false,
    "entries_today": 0,
-   "touched": false,
-   "last_bar": null,
+   "touched": "True",
+   "last_bar": "2026-11-13 09:30:00",
    "paper_open": null,
-   "entry_checks": [],
+   "entry_checks": [
+    [
+     "Zone S1/PDL touched today",
+     true
+    ],
+    [
+     "Close above S1/PDL top 25,166.6",
+     false
+    ],
+    [
+     "Close above VWAP 25,121.2",
+     true
+    ],
+    [
+     "Close still below CPR BC 25,263.9",
+     true
+    ],
+    [
+     "Entries today < 2",
+     true
+    ]
+   ],
    "exit_rules": [
     "Target CPR BC 25,263.9 (underlying touch)",
     "Stop: 15min close below S1/PDL bottom 25,143.0",
@@ -147,7 +168,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-13 09:15:00",
+   "last_bar": "2026-11-13 09:30:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -159,8 +180,8 @@
      true
     ],
     [
-     "Close above VWAP 8,302.6",
-     true
+     "Close above VWAP 8,303.8",
+     false
     ],
     [
      "Close still below CPR BC 8,150.0",
@@ -181,61 +202,47 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25131.95,
-   "chg_pts": -167.4,
-   "chg_pct": -0.66
+   "ltp": 25128.9,
+   "chg_pts": -170.45,
+   "chg_pct": -0.67
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 60954.9,
-   "chg_pts": -563.6,
-   "chg_pct": -0.92
+   "ltp": 60972.05,
+   "chg_pts": -546.45,
+   "chg_pct": -0.89
   },
   {
    "name": "SENSEX",
-   "ltp": 81476.19,
-   "chg_pts": -434.82,
+   "ltp": 81473.12,
+   "chg_pts": -437.89,
    "chg_pct": -0.53
   },
   {
    "name": "INDIA VIX",
-   "ltp": 16.45,
-   "chg_pts": -0.17,
-   "chg_pct": -1.02
+   "ltp": 16.47,
+   "chg_pts": -0.15,
+   "chg_pct": -0.9
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8302,
-   "chg_pts": 2,
-   "chg_pct": 0.02
+   "ltp": 8308,
+   "chg_pts": 8,
+   "chg_pct": 0.1
   },
   {
    "name": "GOLD",
-   "ltp": 137450,
-   "chg_pts": 1225,
-   "chg_pct": 0.9
+   "ltp": 137458,
+   "chg_pts": 1233,
+   "chg_pct": 0.91
   },
   {
    "name": "SILVER",
-   "ltp": 179743,
-   "chg_pts": 1019,
-   "chg_pct": 0.57
+   "ltp": 179727,
+   "chg_pts": 1003,
+   "chg_pct": 0.56
   }
  ],
- "oc": {
-  "spot": 25126,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 12758785,
-  "res_pct": 3.48,
-  "sup_strike": 25000.0,
-  "sup_oi": 10998065,
-  "sup_pct": 0.5,
-  "max_pain": 25150.0,
-  "mp_pct": 0.1,
-  "pcr": 0.831,
-  "suggests": "Balanced"
- },
  "trades": [],
  "signals": [
   {
@@ -271,10 +278,12 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ]
 }

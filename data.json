@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:31:05",
+ "updated": "2026-11-13 15:35:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": null,
+   "ltp": 25144.3,
    "prev_day": {
     "date": "2026-11-12",
     "high": 25384.8,
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": null,
+   "ltp": 8299,
    "prev_day": {
     "date": "2026-11-12",
     "high": 8318.0,
@@ -474,12 +474,12 @@
      "time": 1794583800,
      "open": 8325.0,
      "high": 8337.0,
-     "low": 8303.0,
-     "close": 8305.0,
-     "vwap": 8350.12
+     "low": 8297.0,
+     "close": 8300.0,
+     "vwap": 8349.47
     }
    ],
-   "vwap": 8350.12,
+   "vwap": 8349.47,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -596,20 +596,50 @@
    ]
   }
  },
- "oc": {
-  "spot": 25144.3,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 14927185,
-  "res_pct": 3.4,
-  "sup_strike": 24000.0,
-  "sup_oi": 11291800,
-  "sup_pct": 4.55,
-  "max_pain": 25100.0,
-  "mp_pct": -0.18,
-  "pcr": 0.808,
-  "suggests": "Balanced"
- },
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25144.3,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61034.1,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81592.45,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.56,
+   "chg_pts": -1.06,
+   "chg_pct": -6.38
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8301,
+   "chg_pts": 1,
+   "chg_pct": 0.01
+  },
+  {
+   "name": "GOLD",
+   "ltp": 136949,
+   "chg_pts": 724,
+   "chg_pct": 0.53
+  },
+  {
+   "name": "SILVER",
+   "ltp": 178692,
+   "chg_pts": -32,
+   "chg_pct": -0.02
+  }
+ ],
  "trades": [
   {
    "strategy": "A] SVR NIFTY",
@@ -722,13 +752,13 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": false,
-  "oc_ok": true,
+  "quotes_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1077)')))"
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ]
 }

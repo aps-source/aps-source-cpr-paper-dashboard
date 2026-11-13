@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13 15:37:00",
+ "updated": "2026-11-13 15:38:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8306,
+   "ltp": 8305,
    "prev_day": {
     "date": "2026-11-12",
     "high": 8318.0,
@@ -475,11 +475,11 @@
      "open": 8325.0,
      "high": 8337.0,
      "low": 8296.0,
-     "close": 8309.0,
-     "vwap": 8348.73
+     "close": 8304.0,
+     "vwap": 8348.51
     }
    ],
-   "vwap": 8348.73,
+   "vwap": 8348.51,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -617,41 +617,41 @@
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.53,
-   "chg_pts": -1.09,
-   "chg_pct": -6.56
+   "ltp": 15.55,
+   "chg_pts": -1.07,
+   "chg_pct": -6.44
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8309,
-   "chg_pts": 9,
-   "chg_pct": 0.11
+   "ltp": 8305,
+   "chg_pts": 5,
+   "chg_pct": 0.06
   },
   {
    "name": "GOLD",
-   "ltp": 136941,
-   "chg_pts": 716,
-   "chg_pct": 0.53
+   "ltp": 136965,
+   "chg_pts": 740,
+   "chg_pct": 0.54
   },
   {
    "name": "SILVER",
-   "ltp": 178582,
-   "chg_pts": -142,
-   "chg_pct": -0.08
+   "ltp": 178449,
+   "chg_pts": -275,
+   "chg_pct": -0.15
   }
  ],
  "oc": {
   "spot": 25144.3,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 15084615,
+  "res_oi": 15150265,
   "res_pct": 3.4,
   "sup_strike": 24000.0,
-  "sup_oi": 11697075,
+  "sup_oi": 11592880,
   "sup_pct": 4.55,
   "max_pain": 25100.0,
   "mp_pct": -0.18,
-  "pcr": 0.823,
+  "pcr": 0.826,
   "suggests": "Balanced"
  },
  "trades": [

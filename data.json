@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 09:45:00",
+ "updated": "2026-11-16 09:46:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25297.6,
+   "ltp": 25309.95,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -51,20 +51,20 @@
     {
      "time": 1794822300,
      "open": 25297.9,
-     "high": 25302.65,
+     "high": 25317.3,
      "low": 25297.2,
-     "close": 25301.15,
-     "vwap": 25257.98
+     "close": 25316.65,
+     "vwap": 25258.97
     }
    ],
-   "vwap": 25257.98,
+   "vwap": 25258.97,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8335,
+   "ltp": 8342,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -113,13 +113,13 @@
     {
      "time": 1794822300,
      "open": 8335.0,
-     "high": 8336.0,
+     "high": 8343.0,
      "low": 8334.0,
-     "close": 8336.0,
-     "vwap": 8307.25
+     "close": 8343.0,
+     "vwap": 8307.59
     }
    ],
-   "vwap": 8307.25,
+   "vwap": 8307.59,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -131,7 +131,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-16 09:30:00",
+   "last_bar": "2026-11-16 09:45:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -143,8 +143,8 @@
      true
     ],
     [
-     "Close above VWAP 25,250.9",
-     false
+     "Close above VWAP 25,258.0",
+     true
     ],
     [
      "Close still below CPR BC 25,146.3",
@@ -184,7 +184,7 @@
    "in_position": true,
    "entries_today": 1,
    "touched": "True",
-   "last_bar": "2026-11-16 09:30:00",
+   "last_bar": "2026-11-16 09:45:00",
    "paper_open": {
     "strategy": "A] SVR CRUDEOILM",
     "market": "CRUDEOILM",
@@ -210,7 +210,7 @@
      true
     ],
     [
-     "Close above VWAP 8,298.6",
+     "Close above VWAP 8,307.2",
      true
     ],
     [
@@ -232,47 +232,61 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25297.6,
-   "chg_pts": 153.3,
-   "chg_pct": 0.61
+   "ltp": 25309.95,
+   "chg_pts": 165.65,
+   "chg_pct": 0.66
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61433.7,
-   "chg_pts": 399.6,
-   "chg_pct": 0.65
+   "ltp": 61463.3,
+   "chg_pts": 429.2,
+   "chg_pct": 0.7
   },
   {
    "name": "SENSEX",
-   "ltp": 82192.47,
-   "chg_pts": 600.02,
-   "chg_pct": 0.74
+   "ltp": 82229,
+   "chg_pts": 636.55,
+   "chg_pct": 0.78
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.65,
-   "chg_pts": 0.15,
-   "chg_pct": 0.97
+   "ltp": 15.63,
+   "chg_pts": 0.13,
+   "chg_pct": 0.84
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8333,
-   "chg_pts": -36,
-   "chg_pct": -0.43
+   "ltp": 8340,
+   "chg_pts": -29,
+   "chg_pct": -0.35
   },
   {
    "name": "GOLD",
-   "ltp": 135750,
-   "chg_pts": -955,
-   "chg_pct": -0.7
+   "ltp": 135728,
+   "chg_pts": -977,
+   "chg_pct": -0.71
   },
   {
    "name": "SILVER",
-   "ltp": 170789,
-   "chg_pts": -5520,
+   "ltp": 170797,
+   "chg_pts": -5512,
    "chg_pct": -3.13
   }
  ],
+ "oc": {
+  "spot": 25315.7,
+  "expiry": "2026-11-17",
+  "res_strike": 26000.0,
+  "res_oi": 16629470,
+  "res_pct": 2.7,
+  "sup_strike": 25200.0,
+  "sup_oi": 16925285,
+  "sup_pct": 0.46,
+  "max_pain": 25250.0,
+  "mp_pct": -0.26,
+  "pcr": 0.988,
+  "suggests": "Balanced"
+ },
  "trades": [
   {
    "strategy": "A] SVR CRUDEOILM",
@@ -289,10 +303,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 150.35,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": 6.35,
+   "rs": 64
   }
  ],
  "signals": [
@@ -370,12 +384,10 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ]
+ "errors": []
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 14:15:00",
+ "updated": "2026-11-16 14:16:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": null,
+   "ltp": 25185.95,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -196,19 +196,19 @@
      "time": 1794838500,
      "open": 25192.3,
      "high": 25194.2,
-     "low": 25190.95,
-     "close": 25191.5,
-     "vwap": 25252.74
+     "low": 25183.15,
+     "close": 25186.05,
+     "vwap": 25252.56
     }
    ],
-   "vwap": 25252.74,
+   "vwap": 25252.56,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": null,
+   "ltp": 8327,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -401,13 +401,13 @@
     {
      "time": 1794838500,
      "open": 8323.0,
-     "high": 8328.0,
+     "high": 8329.0,
      "low": 8321.0,
-     "close": 8327.0,
-     "vwap": 8348.47
+     "close": 8322.0,
+     "vwap": 8348.39
     }
    ],
-   "vwap": 8348.47,
+   "vwap": 8348.39,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -419,7 +419,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-16 14:00:00",
+   "last_bar": "2026-11-16 14:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -431,7 +431,7 @@
      true
     ],
     [
-     "Close above VWAP 25,256.1",
+     "Close above VWAP 25,252.8",
      false
     ],
     [
@@ -456,7 +456,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "True",
-   "last_bar": "2026-11-16 13:15:00",
+   "last_bar": "2026-11-16 14:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -472,8 +472,8 @@
      false
     ],
     [
-     "Close below VWAP 25,258.4",
-     false
+     "Close below VWAP 25,252.8",
+     true
     ],
     [
      "Entries today < 2",
@@ -493,7 +493,7 @@
    "in_position": true,
    "entries_today": 1,
    "touched": "True",
-   "last_bar": "2026-11-16 14:00:00",
+   "last_bar": "2026-11-16 14:15:00",
    "paper_open": {
     "strategy": "A] SVR CRUDEOILM",
     "market": "CRUDEOILM",
@@ -519,12 +519,12 @@
      true
     ],
     [
-     "Close above VWAP 8,347.9",
-     true
+     "Close above VWAP 8,348.5",
+     false
     ],
     [
      "Close still below CPR BC 8,367.0",
-     false
+     true
     ],
     [
      "Entries today < 2",
@@ -538,20 +538,50 @@
    ]
   }
  },
- "oc": {
-  "spot": 25191.6,
-  "expiry": "2026-11-17",
-  "res_strike": 25300.0,
-  "res_oi": 22452430,
-  "res_pct": 0.43,
-  "sup_strike": 25200.0,
-  "sup_oi": 16644290,
-  "sup_pct": -0.03,
-  "max_pain": 25200.0,
-  "mp_pct": 0.03,
-  "pcr": 0.851,
-  "suggests": "Balanced"
- },
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25185.95,
+   "chg_pts": 41.65,
+   "chg_pct": 0.17
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 61352,
+   "chg_pts": 317.9,
+   "chg_pct": 0.52
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 81814.57,
+   "chg_pts": 222.12,
+   "chg_pct": 0.27
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.82,
+   "chg_pts": 0.32,
+   "chg_pct": 2.06
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8324,
+   "chg_pts": -45,
+   "chg_pct": -0.54
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134834,
+   "chg_pts": -1871,
+   "chg_pct": -1.37
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169780,
+   "chg_pts": -6529,
+   "chg_pct": -3.7
+  }
+ ],
  "trades": [
   {
    "strategy": "A] SVR CRUDEOILM",
@@ -568,10 +598,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 133.35,
+   "exit_px": 129.95,
    "reason": "OPEN",
-   "pts": -10.65,
-   "rs": -106
+   "pts": -14.05,
+   "rs": -140
   }
  ],
  "signals": [
@@ -648,13 +678,13 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": false,
-  "oc_ok": true,
+  "quotes_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ]
 }

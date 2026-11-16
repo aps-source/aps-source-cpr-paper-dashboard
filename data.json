@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 14:13:00",
+ "updated": "2026-11-16 14:14:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -189,11 +189,11 @@
      "open": 25207.85,
      "high": 25208.8,
      "low": 25172.1,
-     "close": 25187.15,
-     "vwap": 25252.99
+     "close": 25194.85,
+     "vwap": 25252.85
     }
    ],
-   "vwap": 25252.99,
+   "vwap": 25252.85,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -387,11 +387,11 @@
      "open": 8397.0,
      "high": 8413.0,
      "low": 8323.0,
-     "close": 8324.0,
-     "vwap": 8348.92
+     "close": 8325.0,
+     "vwap": 8348.67
     }
    ],
-   "vwap": 8348.92,
+   "vwap": 8348.67,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -523,17 +523,17 @@
   }
  },
  "oc": {
-  "spot": 25187.3,
+  "spot": 25194.9,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 22292205,
-  "res_pct": 0.45,
+  "res_oi": 22286875,
+  "res_pct": 0.42,
   "sup_strike": 25200.0,
-  "sup_oi": 16947190,
-  "sup_pct": -0.05,
+  "sup_oi": 16767530,
+  "sup_pct": -0.02,
   "max_pain": 25200.0,
-  "mp_pct": 0.05,
-  "pcr": 0.861,
+  "mp_pct": 0.02,
+  "pcr": 0.858,
   "suggests": "Balanced"
  },
  "trades": [
@@ -552,10 +552,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 131.4,
+   "exit_px": 131.75,
    "reason": "OPEN",
-   "pts": -12.6,
-   "rs": -126
+   "pts": -12.25,
+   "rs": -122
   }
  ],
  "signals": [

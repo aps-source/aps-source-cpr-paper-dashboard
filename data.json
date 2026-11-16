@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 11:00:00",
+ "updated": "2026-11-16 11:01:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -91,13 +91,13 @@
     {
      "time": 1794826800,
      "open": 25227.25,
-     "high": 25228.7,
-     "low": 25226.25,
-     "close": 25227.2,
-     "vwap": 25266.51
+     "high": 25238.7,
+     "low": 25219.7,
+     "close": 25236.1,
+     "vwap": 25266.22
     }
    ],
-   "vwap": 25266.51,
+   "vwap": 25266.22,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -193,13 +193,13 @@
     {
      "time": 1794826800,
      "open": 8331.0,
-     "high": 8336.0,
+     "high": 8341.0,
      "low": 8330.0,
-     "close": 8336.0,
-     "vwap": 8313.21
+     "close": 8339.0,
+     "vwap": 8313.46
     }
    ],
-   "vwap": 8313.21,
+   "vwap": 8313.46,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -211,7 +211,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-16 10:45:00",
+   "last_bar": "2026-11-16 11:00:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -223,7 +223,7 @@
      true
     ],
     [
-     "Close above VWAP 25,272.9",
+     "Close above VWAP 25,266.5",
      false
     ],
     [
@@ -285,7 +285,7 @@
    "in_position": true,
    "entries_today": 1,
    "touched": "True",
-   "last_bar": "2026-11-16 10:45:00",
+   "last_bar": "2026-11-16 11:00:00",
    "paper_open": {
     "strategy": "A] SVR CRUDEOILM",
     "market": "CRUDEOILM",
@@ -311,7 +311,7 @@
      true
     ],
     [
-     "Close above VWAP 8,312.0",
+     "Close above VWAP 8,312.9",
      true
     ],
     [
@@ -331,17 +331,17 @@
   }
  },
  "oc": {
-  "spot": 25227.2,
+  "spot": 25237.5,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 21428745,
-  "res_pct": 0.29,
+  "res_oi": 21650850,
+  "res_pct": 0.25,
   "sup_strike": 25200.0,
-  "sup_oi": 19379035,
-  "sup_pct": 0.11,
+  "sup_oi": 19618755,
+  "sup_pct": 0.15,
   "max_pain": 25200.0,
-  "mp_pct": -0.11,
-  "pcr": 0.872,
+  "mp_pct": -0.15,
+  "pcr": 0.873,
   "suggests": "Balanced"
  },
  "trades": [
@@ -360,10 +360,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 145.15,
+   "exit_px": 147,
    "reason": "OPEN",
-   "pts": 1.15,
-   "rs": 12
+   "pts": 3,
+   "rs": 30
   }
  ],
  "signals": [
@@ -447,6 +447,6 @@
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001FF477FF890>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ]
 }

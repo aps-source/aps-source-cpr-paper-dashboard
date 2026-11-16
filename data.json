@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 15:21:00",
+ "updated": "2026-11-16 15:22:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8302,
+   "ltp": 8318,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -465,13 +465,13 @@
     {
      "time": 1794842100,
      "open": 8310.0,
-     "high": 8318.0,
+     "high": 8321.0,
      "low": 8295.0,
-     "close": 8302.0,
-     "vwap": 8337.63
+     "close": 8318.0,
+     "vwap": 8337.51
     }
    ],
-   "vwap": 8337.63,
+   "vwap": 8337.51,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -618,46 +618,46 @@
   {
    "name": "SENSEX",
    "ltp": 81904.45,
-   "chg_pts": 46.63,
-   "chg_pct": 0.06
+   "chg_pts": 3.6,
+   "chg_pct": 0.0
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.67,
-   "chg_pts": 0.17,
-   "chg_pct": 1.1
+   "ltp": 15.66,
+   "chg_pts": 0.16,
+   "chg_pct": 1.03
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8300,
-   "chg_pts": -69,
-   "chg_pct": -0.82
+   "ltp": 8319,
+   "chg_pts": -50,
+   "chg_pct": -0.6
   },
   {
    "name": "GOLD",
-   "ltp": 134603,
-   "chg_pts": -2102,
-   "chg_pct": -1.54
+   "ltp": 134515,
+   "chg_pts": -2190,
+   "chg_pct": -1.6
   },
   {
    "name": "SILVER",
-   "ltp": 169500,
-   "chg_pts": -6809,
-   "chg_pct": -3.86
+   "ltp": 169280,
+   "chg_pts": -7029,
+   "chg_pct": -3.99
   }
  ],
  "oc": {
   "spot": 25220.0,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 15831270,
+  "res_oi": 15796690,
   "res_pct": 3.09,
   "sup_strike": 25200.0,
-  "sup_oi": 15376010,
+  "sup_oi": 15183805,
   "sup_pct": 0.08,
   "max_pain": 25200.0,
   "mp_pct": -0.08,
-  "pcr": 0.874,
+  "pcr": 0.881,
   "suggests": "Balanced"
  },
  "trades": [
@@ -676,10 +676,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 122.45,
+   "exit_px": 129.5,
    "reason": "OPEN",
-   "pts": -21.55,
-   "rs": -216
+   "pts": -14.5,
+   "rs": -145
   }
  ],
  "signals": [

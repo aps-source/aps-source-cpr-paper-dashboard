@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 09:13:00",
+ "updated": "2026-11-16 09:14:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -63,11 +63,11 @@
      "open": 8317.0,
      "high": 8317.0,
      "low": 8280.0,
-     "close": 8294.0,
-     "vwap": 8296.22
+     "close": 8295.0,
+     "vwap": 8296.2
     }
    ],
-   "vwap": 8296.22,
+   "vwap": 8296.2,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -122,31 +122,17 @@
   },
   {
    "name": "GOLD",
-   "ltp": 135836,
-   "chg_pts": -869,
-   "chg_pct": -0.64
+   "ltp": 135823,
+   "chg_pts": -882,
+   "chg_pct": -0.65
   },
   {
    "name": "SILVER",
-   "ltp": 170797,
-   "chg_pts": -5512,
-   "chg_pct": -3.13
+   "ltp": 170954,
+   "chg_pts": -5355,
+   "chg_pct": -3.04
   }
  ],
- "oc": {
-  "spot": 25206.2,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 14737060,
-  "res_pct": 3.15,
-  "sup_strike": 24000.0,
-  "sup_oi": 11700260,
-  "sup_pct": 4.79,
-  "max_pain": 25100.0,
-  "mp_pct": -0.42,
-  "pcr": 0.834,
-  "suggests": "Balanced"
- },
  "trades": [],
  "signals": [
   {
@@ -217,10 +203,12 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ]
 }

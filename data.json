@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 14:08:00",
+ "updated": "2026-11-16 14:09:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -189,11 +189,11 @@
      "open": 25207.85,
      "high": 25208.8,
      "low": 25172.1,
-     "close": 25176.5,
-     "vwap": 25254.08
+     "close": 25176.65,
+     "vwap": 25253.8
     }
    ],
-   "vwap": 25254.08,
+   "vwap": 25253.8,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -386,12 +386,12 @@
      "time": 1794837600,
      "open": 8397.0,
      "high": 8413.0,
-     "low": 8348.0,
-     "close": 8354.0,
-     "vwap": 8349.34
+     "low": 8340.0,
+     "close": 8342.0,
+     "vwap": 8349.33
     }
    ],
-   "vwap": 8349.34,
+   "vwap": 8349.33,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -522,20 +522,6 @@
    ]
   }
  },
- "oc": {
-  "spot": 25175.7,
-  "expiry": "2026-11-17",
-  "res_strike": 25300.0,
-  "res_oi": 22073610,
-  "res_pct": 0.49,
-  "sup_strike": 25200.0,
-  "sup_oi": 17560920,
-  "sup_pct": -0.1,
-  "max_pain": 25200.0,
-  "mp_pct": 0.1,
-  "pcr": 0.881,
-  "suggests": "Balanced"
- },
  "trades": [
   {
    "strategy": "A] SVR CRUDEOILM",
@@ -552,10 +538,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 146.15,
+   "exit_px": 139.35,
    "reason": "OPEN",
-   "pts": 2.15,
-   "rs": 22
+   "pts": -4.65,
+   "rs": -46
   }
  ],
  "signals": [
@@ -633,12 +619,13 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": false,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ]
 }

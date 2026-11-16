@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 15:25:00",
+ "updated": "2026-11-16 15:26:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8320,
+   "ltp": 8313,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -467,11 +467,11 @@
      "open": 8310.0,
      "high": 8330.0,
      "low": 8295.0,
-     "close": 8319.0,
-     "vwap": 8337.39
+     "close": 8314.0,
+     "vwap": 8337.31
     }
    ],
-   "vwap": 8337.39,
+   "vwap": 8337.31,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -618,46 +618,46 @@
   {
    "name": "SENSEX",
    "ltp": 81904.45,
-   "chg_pts": -157.0,
-   "chg_pct": -0.19
+   "chg_pts": -178.71,
+   "chg_pct": -0.22
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.67,
-   "chg_pts": 0.17,
-   "chg_pct": 1.1
+   "ltp": 15.68,
+   "chg_pts": 0.18,
+   "chg_pct": 1.16
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8318,
-   "chg_pts": -51,
-   "chg_pct": -0.61
+   "ltp": 8313,
+   "chg_pts": -56,
+   "chg_pct": -0.67
   },
   {
    "name": "GOLD",
-   "ltp": 134522,
-   "chg_pts": -2183,
-   "chg_pct": -1.6
+   "ltp": 134593,
+   "chg_pts": -2112,
+   "chg_pct": -1.54
   },
   {
    "name": "SILVER",
-   "ltp": 169472,
-   "chg_pts": -6837,
-   "chg_pct": -3.88
+   "ltp": 169485,
+   "chg_pts": -6824,
+   "chg_pct": -3.87
   }
  ],
  "oc": {
   "spot": 25220.0,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 15783755,
+  "res_oi": 15757040,
   "res_pct": 3.09,
   "sup_strike": 25200.0,
-  "sup_oi": 14798290,
+  "sup_oi": 14617980,
   "sup_pct": 0.08,
   "max_pain": 25200.0,
   "mp_pct": -0.08,
-  "pcr": 0.885,
+  "pcr": 0.889,
   "suggests": "Balanced"
  },
  "trades": [
@@ -676,10 +676,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 127,
+   "exit_px": null,
    "reason": "OPEN",
-   "pts": -17,
-   "rs": -170
+   "pts": null,
+   "rs": null
   }
  ],
  "signals": [

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 12:16:00",
+ "updated": "2026-11-16 12:17:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25289.1,
+   "ltp": 25291,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -131,20 +131,20 @@
     {
      "time": 1794831300,
      "open": 25279.55,
-     "high": 25296.55,
+     "high": 25297.45,
      "low": 25279.2,
-     "close": 25295.4,
-     "vwap": 25257.76
+     "close": 25292.05,
+     "vwap": 25257.86
     }
    ],
-   "vwap": 25257.76,
+   "vwap": 25257.86,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8405,
+   "ltp": 8395,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -274,12 +274,12 @@
      "time": 1794831300,
      "open": 8412.0,
      "high": 8412.0,
-     "low": 8399.0,
-     "close": 8399.0,
-     "vwap": 8337.33
+     "low": 8395.0,
+     "close": 8395.0,
+     "vwap": 8337.75
     }
    ],
-   "vwap": 8337.33,
+   "vwap": 8337.75,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -413,59 +413,59 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25289.1,
-   "chg_pts": 144.8,
+   "ltp": 25291,
+   "chg_pts": 146.7,
    "chg_pct": 0.58
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61635.9,
-   "chg_pts": 601.8,
-   "chg_pct": 0.99
+   "ltp": 61645.95,
+   "chg_pts": 611.85,
+   "chg_pct": 1.0
   },
   {
    "name": "SENSEX",
-   "ltp": 82143.62,
-   "chg_pts": 551.17,
-   "chg_pct": 0.68
+   "ltp": 82152.19,
+   "chg_pts": 559.74,
+   "chg_pct": 0.69
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.81,
-   "chg_pts": 0.31,
-   "chg_pct": 2.0
+   "ltp": 15.83,
+   "chg_pts": 0.33,
+   "chg_pct": 2.13
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8406,
-   "chg_pts": 37,
-   "chg_pct": 0.44
+   "ltp": 8397,
+   "chg_pts": 28,
+   "chg_pct": 0.33
   },
   {
    "name": "GOLD",
-   "ltp": 134601,
-   "chg_pts": -2104,
-   "chg_pct": -1.54
+   "ltp": 134546,
+   "chg_pts": -2159,
+   "chg_pct": -1.58
   },
   {
    "name": "SILVER",
-   "ltp": 169711,
-   "chg_pts": -6598,
-   "chg_pct": -3.74
+   "ltp": 169546,
+   "chg_pts": -6763,
+   "chg_pct": -3.84
   }
  ],
  "oc": {
-  "spot": 25294.2,
+  "spot": 25292.8,
   "expiry": "2026-11-17",
   "res_strike": 25300.0,
-  "res_oi": 18990855,
-  "res_pct": 0.02,
+  "res_oi": 19239480,
+  "res_pct": 0.03,
   "sup_strike": 25200.0,
-  "sup_oi": 22653800,
+  "sup_oi": 22820395,
   "sup_pct": 0.37,
   "max_pain": 25250.0,
   "mp_pct": -0.17,
-  "pcr": 0.995,
+  "pcr": 0.997,
   "suggests": "Balanced"
  },
  "trades": [
@@ -484,10 +484,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 184.65,
+   "exit_px": 181.85,
    "reason": "OPEN",
-   "pts": 40.65,
-   "rs": 406
+   "pts": 37.85,
+   "rs": 378
   }
  ],
  "signals": [

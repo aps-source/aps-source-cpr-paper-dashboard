@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 15:19:00",
+ "updated": "2026-11-16 15:20:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -230,17 +230,17 @@
      "high": 25220.05,
      "low": 25220.05,
      "close": 25220.05,
-     "vwap": 25244.98
+     "vwap": 25244.97
     }
    ],
-   "vwap": 25244.98,
+   "vwap": 25244.97,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8305,
+   "ltp": 8301,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -466,12 +466,12 @@
      "time": 1794842100,
      "open": 8310.0,
      "high": 8318.0,
-     "low": 8301.0,
-     "close": 8305.0,
-     "vwap": 8337.88
+     "low": 8296.0,
+     "close": 8301.0,
+     "vwap": 8337.76
     }
    ],
-   "vwap": 8337.88,
+   "vwap": 8337.76,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -618,46 +618,46 @@
   {
    "name": "SENSEX",
    "ltp": 81904.45,
-   "chg_pts": -34.86,
-   "chg_pct": -0.04
+   "chg_pts": -5.92,
+   "chg_pct": -0.01
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.63,
-   "chg_pts": 0.13,
-   "chg_pct": 0.84
+   "ltp": 15.65,
+   "chg_pts": 0.15,
+   "chg_pct": 0.97
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8303,
-   "chg_pts": -66,
-   "chg_pct": -0.79
+   "ltp": 8297,
+   "chg_pts": -72,
+   "chg_pct": -0.86
   },
   {
    "name": "GOLD",
-   "ltp": 134635,
-   "chg_pts": -2070,
-   "chg_pct": -1.51
+   "ltp": 134655,
+   "chg_pts": -2050,
+   "chg_pct": -1.5
   },
   {
    "name": "SILVER",
-   "ltp": 169668,
-   "chg_pts": -6641,
-   "chg_pct": -3.77
+   "ltp": 169644,
+   "chg_pts": -6665,
+   "chg_pct": -3.78
   }
  ],
  "oc": {
   "spot": 25220.0,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 15981225,
+  "res_oi": 15886455,
   "res_pct": 3.09,
   "sup_strike": 25200.0,
-  "sup_oi": 16037840,
+  "sup_oi": 15915900,
   "sup_pct": 0.08,
   "max_pain": 25200.0,
   "mp_pct": -0.08,
-  "pcr": 0.881,
+  "pcr": 0.88,
   "suggests": "Balanced"
  },
  "trades": [
@@ -676,10 +676,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": null,
+   "exit_px": 117.5,
    "reason": "OPEN",
-   "pts": null,
-   "rs": null
+   "pts": -26.5,
+   "rs": -265
   }
  ],
  "signals": [

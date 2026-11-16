@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 11:59:00",
+ "updated": "2026-11-16 12:00:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25245.7,
+   "ltp": 25255.85,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -115,13 +115,21 @@
     {
      "time": 1794829500,
      "open": 25222.2,
-     "high": 25250.3,
+     "high": 25257.7,
      "low": 25206.95,
-     "close": 25246.9,
-     "vwap": 25256.47
+     "close": 25255.7,
+     "vwap": 25256.45
+    },
+    {
+     "time": 1794830400,
+     "open": 25255.75,
+     "high": 25260.05,
+     "low": 25255.2,
+     "close": 25259.8,
+     "vwap": 25256.46
     }
    ],
-   "vwap": 25256.47,
+   "vwap": 25256.46,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -243,11 +251,19 @@
      "open": 8370.0,
      "high": 8399.0,
      "low": 8361.0,
-     "close": 8396.0,
-     "vwap": 8328.58
+     "close": 8398.0,
+     "vwap": 8328.71
+    },
+    {
+     "time": 1794830400,
+     "open": 8397.0,
+     "high": 8409.0,
+     "low": 8397.0,
+     "close": 8406.0,
+     "vwap": 8329.94
     }
    ],
-   "vwap": 8328.58,
+   "vwap": 8329.94,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -381,47 +397,61 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25245.7,
-   "chg_pts": 101.4,
-   "chg_pct": 0.4
+   "ltp": 25255.85,
+   "chg_pts": 111.55,
+   "chg_pct": 0.44
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61439.7,
-   "chg_pts": 405.6,
-   "chg_pct": 0.66
+   "ltp": 61479.6,
+   "chg_pts": 445.5,
+   "chg_pct": 0.73
   },
   {
    "name": "SENSEX",
-   "ltp": 82023.27,
-   "chg_pts": 430.82,
-   "chg_pct": 0.53
+   "ltp": 82045.83,
+   "chg_pts": 453.38,
+   "chg_pct": 0.56
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.67,
-   "chg_pts": 0.17,
-   "chg_pct": 1.1
+   "ltp": 15.7,
+   "chg_pts": 0.2,
+   "chg_pct": 1.29
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8397,
-   "chg_pts": 28,
-   "chg_pct": 0.33
+   "ltp": 8399,
+   "chg_pts": 30,
+   "chg_pct": 0.36
   },
   {
    "name": "GOLD",
-   "ltp": 134770,
-   "chg_pts": -1935,
+   "ltp": 134765,
+   "chg_pts": -1940,
    "chg_pct": -1.42
   },
   {
    "name": "SILVER",
-   "ltp": 170047,
-   "chg_pts": -6262,
-   "chg_pct": -3.55
+   "ltp": 169985,
+   "chg_pts": -6324,
+   "chg_pct": -3.59
   }
  ],
+ "oc": {
+  "spot": 25258.7,
+  "expiry": "2026-11-17",
+  "res_strike": 25300.0,
+  "res_oi": 21283795,
+  "res_pct": 0.16,
+  "sup_strike": 25200.0,
+  "sup_oi": 23198435,
+  "sup_pct": 0.23,
+  "max_pain": 25200.0,
+  "mp_pct": -0.23,
+  "pcr": 0.891,
+  "suggests": "Balanced"
+ },
  "trades": [
   {
    "strategy": "A] SVR CRUDEOILM",
@@ -438,10 +468,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 186.7,
+   "exit_px": 193.4,
    "reason": "OPEN",
-   "pts": 42.7,
-   "rs": 427
+   "pts": 49.4,
+   "rs": 494
   }
  ],
  "signals": [
@@ -519,12 +549,10 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": false,
+  "oc_ok": true,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": [
-  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
- ]
+ "errors": []
 }

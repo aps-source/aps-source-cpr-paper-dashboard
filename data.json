@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 11:23:00",
+ "updated": "2026-11-16 11:24:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25221.5,
+   "ltp": 25227.55,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -101,18 +101,18 @@
      "open": 25225.0,
      "high": 25235.95,
      "low": 25211.7,
-     "close": 25222.35,
-     "vwap": 25261.7
+     "close": 25226.3,
+     "vwap": 25261.41
     }
    ],
-   "vwap": 25261.7,
+   "vwap": 25261.41,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8348,
+   "ltp": 8353,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -211,11 +211,11 @@
      "open": 8339.0,
      "high": 8365.0,
      "low": 8336.0,
-     "close": 8352.0,
-     "vwap": 8317.27
+     "close": 8354.0,
+     "vwap": 8317.34
     }
    ],
-   "vwap": 8317.27,
+   "vwap": 8317.34,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -349,27 +349,27 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25221.5,
-   "chg_pts": 77.2,
-   "chg_pct": 0.31
+   "ltp": 25227.55,
+   "chg_pts": 83.25,
+   "chg_pct": 0.33
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61430.7,
-   "chg_pts": 396.6,
-   "chg_pct": 0.65
+   "ltp": 61444.3,
+   "chg_pts": 410.2,
+   "chg_pct": 0.67
   },
   {
    "name": "SENSEX",
-   "ltp": 81934.52,
-   "chg_pts": 342.07,
-   "chg_pct": 0.42
+   "ltp": 81955.31,
+   "chg_pts": 362.86,
+   "chg_pct": 0.44
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.49,
-   "chg_pts": -0.01,
-   "chg_pct": -0.06
+   "ltp": 15.5,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
   },
   {
    "name": "CRUDEOIL",
@@ -379,15 +379,15 @@
   },
   {
    "name": "GOLD",
-   "ltp": 134716,
-   "chg_pts": -1989,
-   "chg_pct": -1.45
+   "ltp": 134650,
+   "chg_pts": -2055,
+   "chg_pct": -1.5
   },
   {
    "name": "SILVER",
-   "ltp": 169709,
-   "chg_pts": -6600,
-   "chg_pct": -3.74
+   "ltp": 169567,
+   "chg_pts": -6742,
+   "chg_pct": -3.82
   }
  ],
  "trades": [
@@ -406,10 +406,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 157.1,
+   "exit_px": 157.2,
    "reason": "OPEN",
-   "pts": 13.1,
-   "rs": 131
+   "pts": 13.2,
+   "rs": 132
   }
  ],
  "signals": [

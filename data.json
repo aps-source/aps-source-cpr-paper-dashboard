@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 11:38:00",
+ "updated": "2026-11-16 11:39:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25224.7,
+   "ltp": null,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -109,18 +109,18 @@
      "open": 25220.6,
      "high": 25247.3,
      "low": 25215.75,
-     "close": 25224.6,
-     "vwap": 25258.94
+     "close": 25228.0,
+     "vwap": 25258.86
     }
    ],
-   "vwap": 25258.94,
+   "vwap": 25258.86,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8355,
+   "ltp": null,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -225,13 +225,13 @@
     {
      "time": 1794828600,
      "open": 8354.0,
-     "high": 8361.0,
+     "high": 8363.0,
      "low": 8347.0,
-     "close": 8354.0,
-     "vwap": 8319.13
+     "close": 8361.0,
+     "vwap": 8319.4
     }
    ],
-   "vwap": 8319.13,
+   "vwap": 8319.4,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -362,50 +362,6 @@
    ]
   }
  },
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25224.7,
-   "chg_pts": 80.4,
-   "chg_pct": 0.32
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 61384.8,
-   "chg_pts": 350.7,
-   "chg_pct": 0.57
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 81941.7,
-   "chg_pts": 349.25,
-   "chg_pct": 0.43
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.48,
-   "chg_pts": -0.02,
-   "chg_pct": -0.13
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 8355,
-   "chg_pts": -14,
-   "chg_pct": -0.17
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134850,
-   "chg_pts": -1855,
-   "chg_pct": -1.36
-  },
-  {
-   "name": "SILVER",
-   "ltp": 169902,
-   "chg_pts": -6407,
-   "chg_pct": -3.63
-  }
- ],
  "trades": [
   {
    "strategy": "A] SVR CRUDEOILM",
@@ -422,10 +378,10 @@
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
    "exit_t": null,
-   "exit_px": 158.4,
+   "exit_px": 162.05,
    "reason": "OPEN",
-   "pts": 14.4,
-   "rs": 144
+   "pts": 18.05,
+   "rs": 180
   }
  ],
  "signals": [
@@ -502,13 +458,14 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
  "errors": [
+  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote",
   "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
  ]
 }

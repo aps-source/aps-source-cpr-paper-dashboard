@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 15:30:00",
+ "updated": "2026-11-16 15:31:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8315,
+   "ltp": 8327,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -473,13 +473,13 @@
     {
      "time": 1794843000,
      "open": 8317.0,
-     "high": 8317.0,
+     "high": 8328.0,
      "low": 8307.0,
-     "close": 8313.0,
-     "vwap": 8337.07
+     "close": 8326.0,
+     "vwap": 8337.03
     }
    ],
-   "vwap": 8337.07,
+   "vwap": 8337.03,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -491,7 +491,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-16 15:15:00",
+   "last_bar": "2026-11-16 15:30:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -504,7 +504,7 @@
     ],
     [
      "Close above VWAP 25,245.0",
-     false
+     true
     ],
     [
      "Close still below CPR BC 25,146.3",
@@ -562,25 +562,11 @@
    "name": "A] SVR CRUDEOILM",
    "market": "CRUDEOILM",
    "tf": "15min",
-   "in_position": true,
+   "in_position": false,
    "entries_today": 1,
    "touched": "True",
-   "last_bar": "2026-11-16 15:15:00",
-   "paper_open": {
-    "strategy": "A] SVR CRUDEOILM",
-    "market": "CRUDEOILM",
-    "date": "2026-11-16",
-    "expiry": "2026-11-17",
-    "side": "LONG",
-    "strike": 8300,
-    "opt_type": "CE",
-    "opt_id": 583252,
-    "seg": "MCX_COMM",
-    "entry_t": "09:31",
-    "entry_px": 144,
-    "spot_entry": 8325,
-    "bar": "2026-11-16 09:30:00"
-   },
+   "last_bar": "2026-11-16 15:30:00",
+   "paper_open": null,
    "entry_checks": [
     [
      "Zone S1/PDL touched today",
@@ -591,7 +577,7 @@
      true
     ],
     [
-     "Close above VWAP 8,338.2",
+     "Close above VWAP 8,337.1",
      false
     ],
     [
@@ -631,41 +617,41 @@
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.69,
-   "chg_pts": 0.19,
-   "chg_pct": 1.23
+   "ltp": 15.7,
+   "chg_pts": 0.2,
+   "chg_pct": 1.29
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8310,
-   "chg_pts": -59,
-   "chg_pct": -0.7
+   "ltp": 8326,
+   "chg_pts": -43,
+   "chg_pct": -0.51
   },
   {
    "name": "GOLD",
-   "ltp": 134671,
-   "chg_pts": -2034,
-   "chg_pct": -1.49
+   "ltp": 134713,
+   "chg_pts": -1992,
+   "chg_pct": -1.46
   },
   {
    "name": "SILVER",
-   "ltp": 169487,
-   "chg_pts": -6822,
-   "chg_pct": -3.87
+   "ltp": 169452,
+   "chg_pts": -6857,
+   "chg_pct": -3.89
   }
  ],
  "oc": {
   "spot": 25291.1,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
-  "res_oi": 15424695,
+  "res_oi": 15348840,
   "res_pct": 2.8,
   "sup_strike": 25200.0,
-  "sup_oi": 13464685,
+  "sup_oi": 12969450,
   "sup_pct": 0.36,
   "max_pain": 25200.0,
   "mp_pct": -0.36,
-  "pcr": 0.906,
+  "pcr": 0.914,
   "suggests": "Balanced"
  },
  "trades": [
@@ -683,11 +669,12 @@
    "entry_px": 144,
    "spot_entry": 8325,
    "bar": "2026-11-16 09:30:00",
-   "exit_t": null,
-   "exit_px": 126.2,
-   "reason": "OPEN",
-   "pts": -17.8,
-   "rs": -178
+   "exit_t": "15:31",
+   "exit_px": 130.65,
+   "reason": "eod",
+   "pts": -13.35,
+   "rs": -194,
+   "spot_exit": 8327
   }
  ],
  "signals": [
@@ -738,6 +725,12 @@
    "strategy": "A] SVR CRUDEOILM",
    "event": "ENTRY",
    "detail": "buy 8300 CE @ 144.00 (underlying 8,325.00, bar 09:30)"
+  },
+  {
+   "time": "2026-11-16 15:31",
+   "strategy": "A] SVR CRUDEOILM",
+   "event": "EXIT",
+   "detail": "sell 8300 CE @ 130.65 (eod) -13.35 pts = Rs -194"
   }
  ],
  "paper": {
@@ -751,10 +744,15 @@
     "trades": 1,
     "wins": 0,
     "rs": -2696
+   },
+   "A] SVR CRUDEOILM": {
+    "trades": 1,
+    "wins": 0,
+    "rs": -194
    }
   },
-  "total_trades": 2,
-  "total_rs": -6357
+  "total_trades": 3,
+  "total_rs": -6551
  },
  "instrument": {
   "NIFTY": "ATM weekly option, expiry 2026-11-17, lot 65",

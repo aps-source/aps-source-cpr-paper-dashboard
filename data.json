@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 09:05:00",
+ "updated": "2026-11-16 09:06:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25194.9,
+   "ltp": 25195.35,
    "prev_day": {
     "date": "2026-11-13",
     "high": 25246.35,
@@ -36,7 +36,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8292,
+   "ltp": 8295,
    "prev_day": {
     "date": "2026-11-13",
     "high": 8458.0,
@@ -63,11 +63,11 @@
      "open": 8317.0,
      "high": 8317.0,
      "low": 8280.0,
-     "close": 8290.0,
-     "vwap": 8297.5
+     "close": 8295.0,
+     "vwap": 8297.23
     }
    ],
-   "vwap": 8297.5,
+   "vwap": 8297.23,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -92,21 +92,21 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25194.9,
-   "chg_pts": 50.6,
+   "ltp": 25195.35,
+   "chg_pts": 51.05,
    "chg_pct": 0.2
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61166.8,
-   "chg_pts": 132.7,
-   "chg_pct": 0.22
+   "ltp": 61202.55,
+   "chg_pts": 168.45,
+   "chg_pct": 0.28
   },
   {
    "name": "SENSEX",
-   "ltp": 81680.3,
-   "chg_pts": 87.85,
-   "chg_pct": 0.11
+   "ltp": 81792.67,
+   "chg_pts": 200.22,
+   "chg_pct": 0.25
   },
   {
    "name": "INDIA VIX",
@@ -116,34 +116,34 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8289,
-   "chg_pts": -80,
-   "chg_pct": -0.96
+   "ltp": 8293,
+   "chg_pts": -76,
+   "chg_pct": -0.91
   },
   {
    "name": "GOLD",
-   "ltp": 135700,
-   "chg_pts": -1005,
-   "chg_pct": -0.74
+   "ltp": 135605,
+   "chg_pts": -1100,
+   "chg_pct": -0.8
   },
   {
    "name": "SILVER",
-   "ltp": 170714,
-   "chg_pts": -5595,
-   "chg_pct": -3.17
+   "ltp": 170630,
+   "chg_pts": -5679,
+   "chg_pct": -3.22
   }
  ],
  "oc": {
-  "spot": 25201.5,
+  "spot": 25197.3,
   "expiry": "2026-11-17",
   "res_strike": 26000.0,
   "res_oi": 14737060,
-  "res_pct": 3.17,
+  "res_pct": 3.19,
   "sup_strike": 24000.0,
   "sup_oi": 11700260,
-  "sup_pct": 4.77,
+  "sup_pct": 4.75,
   "max_pain": 25100.0,
-  "mp_pct": -0.4,
+  "mp_pct": -0.39,
   "pcr": 0.834,
   "suggests": "Balanced"
  },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 12:49:00",
+ "updated": "2026-11-17 12:50:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,157 +10,13 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": null,
-   "prev_day": {
-    "date": "2026-11-16",
-    "high": 25337.6,
-    "low": 25172.1,
-    "close": 25291.1
-   },
-   "levels": {
-    "P": 25266.93,
-    "TC": 25279.02,
-    "BC": 25254.85,
-    "R1": 25361.77,
-    "S1": 25196.27,
-    "PDH": 25337.6,
-    "PDL": 25172.1,
-    "UP": 25361.77,
-    "UPLO": 25337.6,
-    "DN": 25172.1,
-    "DNHI": 25196.27,
-    "width_pct": 0.1
-   },
-   "bars": [
-    {
-     "time": 1794906900,
-     "open": 25277.3,
-     "high": 25358.05,
-     "low": 25267.3,
-     "close": 25321.85,
-     "vwap": 25330.2
-    },
-    {
-     "time": 1794907800,
-     "open": 25322.6,
-     "high": 25349.2,
-     "low": 25292.85,
-     "close": 25347.35,
-     "vwap": 25327.19
-    },
-    {
-     "time": 1794908700,
-     "open": 25348.95,
-     "high": 25382.5,
-     "low": 25345.9,
-     "close": 25372.6,
-     "vwap": 25336.66
-    },
-    {
-     "time": 1794909600,
-     "open": 25372.45,
-     "high": 25386.75,
-     "low": 25359.25,
-     "close": 25379.2,
-     "vwap": 25344.68
-    },
-    {
-     "time": 1794910500,
-     "open": 25381.0,
-     "high": 25416.85,
-     "low": 25376.35,
-     "close": 25400.15,
-     "vwap": 25352.9
-    },
-    {
-     "time": 1794911400,
-     "open": 25401.8,
-     "high": 25405.6,
-     "low": 25371.6,
-     "close": 25389.95,
-     "vwap": 25356.97
-    },
-    {
-     "time": 1794912300,
-     "open": 25391.95,
-     "high": 25416.95,
-     "low": 25381.25,
-     "close": 25404.8,
-     "vwap": 25362.51
-    },
-    {
-     "time": 1794913200,
-     "open": 25406.15,
-     "high": 25436.75,
-     "low": 25402.65,
-     "close": 25425.15,
-     "vwap": 25367.58
-    },
-    {
-     "time": 1794914100,
-     "open": 25426.4,
-     "high": 25452.8,
-     "low": 25423.8,
-     "close": 25438.45,
-     "vwap": 25374.83
-    },
-    {
-     "time": 1794915000,
-     "open": 25438.3,
-     "high": 25454.55,
-     "low": 25433.2,
-     "close": 25453.0,
-     "vwap": 25379.41
-    },
-    {
-     "time": 1794915900,
-     "open": 25454.5,
-     "high": 25486.9,
-     "low": 25448.25,
-     "close": 25483.55,
-     "vwap": 25385.26
-    },
-    {
-     "time": 1794916800,
-     "open": 25484.65,
-     "high": 25501.35,
-     "low": 25472.25,
-     "close": 25496.6,
-     "vwap": 25393.79
-    },
-    {
-     "time": 1794917700,
-     "open": 25498.75,
-     "high": 25499.05,
-     "low": 25476.95,
-     "close": 25486.6,
-     "vwap": 25400.86
-    },
-    {
-     "time": 1794918600,
-     "open": 25488.05,
-     "high": 25498.7,
-     "low": 25451.55,
-     "close": 25460.25,
-     "vwap": 25405.49
-    },
-    {
-     "time": 1794919500,
-     "open": 25461.4,
-     "high": 25462.85,
-     "low": 25444.0,
-     "close": 25459.8,
-     "vwap": 25406.23
-    }
-   ],
-   "vwap": 25406.23,
-   "chart_png": "charts/NIFTY_today.png"
+   "ltp": 25457.8
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": null,
+   "ltp": 7952,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -307,89 +163,15 @@
      "open": 7954.0,
      "high": 7966.0,
      "low": 7943.0,
-     "close": 7947.0,
-     "vwap": 7961.01
+     "close": 7949.0,
+     "vwap": 7960.98
     }
    ],
-   "vwap": 7961.01,
+   "vwap": 7960.98,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
  "strategies": {
-  "SVR_NIFTY": {
-   "name": "A] SVR NIFTY",
-   "market": "NIFTY",
-   "tf": "15min",
-   "in_position": false,
-   "entries_today": 0,
-   "touched": "False",
-   "last_bar": "2026-11-17 12:45:00",
-   "paper_open": null,
-   "entry_checks": [
-    [
-     "Zone S1/PDL touched today",
-     true
-    ],
-    [
-     "Close above S1/PDL top 25,196.3",
-     true
-    ],
-    [
-     "Close above VWAP 25,405.5",
-     true
-    ],
-    [
-     "Close still below CPR BC 25,254.8",
-     false
-    ],
-    [
-     "Entries today < 2",
-     true
-    ]
-   ],
-   "exit_rules": [
-    "Target CPR BC 25,254.8 (underlying touch)",
-    "Stop: 15min close below S1/PDL bottom 25,172.1",
-    "Time exit at 15:10 bar close"
-   ]
-  },
-  "RVR_NIFTY": {
-   "name": "B] RVR NIFTY",
-   "market": "NIFTY",
-   "tf": "60min",
-   "in_position": false,
-   "entries_today": 0,
-   "touched": "True",
-   "last_bar": "2026-11-17 12:15:00",
-   "paper_open": null,
-   "entry_checks": [
-    [
-     "CPR width < 0.20% (now 0.096%)",
-     true
-    ],
-    [
-     "CPR BC 25,254.8 touched today",
-     true
-    ],
-    [
-     "Close below S1/PDL bottom 25,172.1",
-     false
-    ],
-    [
-     "Close below VWAP 25,393.8",
-     false
-    ],
-    [
-     "Entries today < 2",
-     true
-    ]
-   ],
-   "exit_rules": [
-    "Stop: 60-min close above S1/PDL top 25,196.3",
-    "No target",
-    "Time exit at 15:10 bar close"
-   ]
-  },
   "SVR_CRUDEOILM": {
    "name": "A] SVR CRUDEOILM",
    "market": "CRUDEOILM",
@@ -428,18 +210,62 @@
    ]
   }
  },
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25457.8,
+   "chg_pts": 166.7,
+   "chg_pct": 0.66
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62341.45,
+   "chg_pts": 765.55,
+   "chg_pct": 1.24
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82783.76,
+   "chg_pts": 678.97,
+   "chg_pct": 0.83
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.44,
+   "chg_pts": -0.24,
+   "chg_pct": -1.53
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 7952,
+   "chg_pts": -127,
+   "chg_pct": -1.57
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134845,
+   "chg_pts": 306,
+   "chg_pct": 0.23
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169534,
+   "chg_pts": 1671,
+   "chg_pct": 1.0
+  }
+ ],
  "oc": {
-  "spot": 25458.3,
+  "spot": 25457.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 34125390,
-  "res_pct": 0.16,
+  "res_oi": 34741330,
+  "res_pct": 0.17,
   "sup_strike": 25400.0,
   "sup_oi": 39342290,
   "sup_pct": 0.23,
   "max_pain": 25450.0,
   "mp_pct": -0.03,
-  "pcr": 1.534,
+  "pcr": 1.529,
   "suggests": "Suggests CALL"
  },
  "trades": [],
@@ -528,13 +354,13 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": false,
+  "quotes_ok": true,
   "oc_ok": true,
-  "nifty_levels": true,
+  "nifty_levels": false,
   "crude_levels": true,
-  "rvr_narrow_day": "True"
+  "rvr_narrow_day": false
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "NIFTY candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4510402D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ]
 }

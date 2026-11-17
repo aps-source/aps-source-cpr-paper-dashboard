@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:52:00",
+ "updated": "2026-11-17 13:53:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25445.4,
+   "ltp": null,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -179,20 +179,20 @@
     {
      "time": 1794923100,
      "open": 25422.3,
-     "high": 25447.0,
+     "high": 25448.45,
      "low": 25412.5,
-     "close": 25442.65,
-     "vwap": 25406.05
+     "close": 25443.6,
+     "vwap": 25406.28
     }
    ],
-   "vwap": 25406.05,
+   "vwap": 25406.28,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7984,
+   "ltp": null,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -371,11 +371,11 @@
      "open": 7976.0,
      "high": 8001.0,
      "low": 7974.0,
-     "close": 7986.0,
-     "vwap": 7966.01
+     "close": 7987.0,
+     "vwap": 7966.06
     }
    ],
-   "vwap": 7966.01,
+   "vwap": 7966.06,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -492,62 +492,18 @@
    ]
   }
  },
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25445.4,
-   "chg_pts": 154.3,
-   "chg_pct": 0.61
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62354.5,
-   "chg_pts": 778.6,
-   "chg_pct": 1.26
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82750.9,
-   "chg_pts": 646.11,
-   "chg_pct": 0.79
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.39,
-   "chg_pts": -0.29,
-   "chg_pct": -1.85
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7989,
-   "chg_pts": -90,
-   "chg_pct": -1.11
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134460,
-   "chg_pts": -79,
-   "chg_pct": -0.06
-  },
-  {
-   "name": "SILVER",
-   "ltp": 169600,
-   "chg_pts": 1737,
-   "chg_pct": 1.03
-  }
- ],
  "oc": {
-  "spot": 25443.3,
+  "spot": 25444.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 39437515,
+  "res_oi": 39044915,
   "res_pct": 0.22,
-  "sup_strike": 25300.0,
-  "sup_oi": 31120115,
-  "sup_pct": 0.56,
+  "sup_strike": 25400.0,
+  "sup_oi": 31710640,
+  "sup_pct": 0.18,
   "max_pain": 25400.0,
-  "mp_pct": -0.17,
-  "pcr": 1.082,
+  "mp_pct": -0.18,
+  "pcr": 1.112,
   "suggests": "Balanced"
  },
  "trades": [],
@@ -636,11 +592,13 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": true,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C450A62490>, 'Connection to api.dhan.co timed out. (connect timeout=15)'))"
+ ]
 }

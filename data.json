@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:13:00",
+ "updated": "2026-11-17 13:15:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -113,9 +113,9 @@
   "rvr_narrow_day": false
  },
  "errors": [
-  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C452C12490>, 'Connection to api.dhan.co timed out. (connect timeout=15)'))",
-  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C12850>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "NIFTY candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C12AD0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "CRUDEOILM candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C12D50>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C13250>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C134D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "NIFTY candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C13890>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "CRUDEOILM candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452C13B10>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ]
 }

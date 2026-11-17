@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 12:56:00",
+ "updated": "2026-11-17 12:57:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -149,11 +149,11 @@
      "open": 25461.4,
      "high": 25464.95,
      "low": 25444.0,
-     "close": 25452.6,
-     "vwap": 25407.12
+     "close": 25458.85,
+     "vwap": 25407.31
     }
    ],
-   "vwap": 25407.12,
+   "vwap": 25407.31,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -305,13 +305,13 @@
     {
      "time": 1794919500,
      "open": 7954.0,
-     "high": 7966.0,
+     "high": 7968.0,
      "low": 7943.0,
-     "close": 7964.0,
-     "vwap": 7960.87
+     "close": 7966.0,
+     "vwap": 7960.89
     }
    ],
-   "vwap": 7960.87,
+   "vwap": 7960.89,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -429,17 +429,17 @@
   }
  },
  "oc": {
-  "spot": 25454.0,
+  "spot": 25457.8,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 37127480,
-  "res_pct": 0.18,
+  "res_oi": 37337105,
+  "res_pct": 0.17,
   "sup_strike": 25400.0,
-  "sup_oi": 40080625,
-  "sup_pct": 0.21,
+  "sup_oi": 40059955,
+  "sup_pct": 0.23,
   "max_pain": 25450.0,
-  "mp_pct": -0.02,
-  "pcr": 1.48,
+  "mp_pct": -0.03,
+  "pcr": 1.471,
   "suggests": "Suggests CALL"
  },
  "trades": [],
@@ -535,6 +535,6 @@
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4528C47D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ]
 }

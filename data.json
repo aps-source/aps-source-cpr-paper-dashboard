@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 14:02:00",
+ "updated": "2026-11-17 14:03:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25454.3,
+   "ltp": 25457.35,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -189,210 +189,18 @@
      "open": 25457.0,
      "high": 25459.6,
      "low": 25450.4,
-     "close": 25455.45,
-     "vwap": 25407.48
+     "close": 25456.15,
+     "vwap": 25407.6
     }
    ],
-   "vwap": 25407.48,
+   "vwap": 25407.6,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7983,
-   "prev_day": {
-    "date": "2026-11-16",
-    "high": 8424.0,
-    "low": 8065.0,
-    "close": 8071.0
-   },
-   "levels": {
-    "P": 8186.67,
-    "TC": 8244.5,
-    "BC": 8128.83,
-    "R1": 8308.33,
-    "S1": 7949.33,
-    "PDH": 8424.0,
-    "PDL": 8065.0,
-    "UP": 8424.0,
-    "UPLO": 8308.33,
-    "DN": 7949.33,
-    "DNHI": 8065.0,
-    "width_pct": 1.41
-   },
-   "bars": [
-    {
-     "time": 1794906000,
-     "open": 8055.0,
-     "high": 8055.0,
-     "low": 7959.0,
-     "close": 7977.0,
-     "vwap": 7984.05
-    },
-    {
-     "time": 1794906900,
-     "open": 7977.0,
-     "high": 7978.0,
-     "low": 7959.0,
-     "close": 7962.0,
-     "vwap": 7977.3
-    },
-    {
-     "time": 1794907800,
-     "open": 7960.0,
-     "high": 7970.0,
-     "low": 7956.0,
-     "close": 7960.0,
-     "vwap": 7973.44
-    },
-    {
-     "time": 1794908700,
-     "open": 7960.0,
-     "high": 7969.0,
-     "low": 7952.0,
-     "close": 7961.0,
-     "vwap": 7971.51
-    },
-    {
-     "time": 1794909600,
-     "open": 7961.0,
-     "high": 7979.0,
-     "low": 7960.0,
-     "close": 7968.0,
-     "vwap": 7971.46
-    },
-    {
-     "time": 1794910500,
-     "open": 7968.0,
-     "high": 7971.0,
-     "low": 7956.0,
-     "close": 7969.0,
-     "vwap": 7970.71
-    },
-    {
-     "time": 1794911400,
-     "open": 7969.0,
-     "high": 7973.0,
-     "low": 7958.0,
-     "close": 7962.0,
-     "vwap": 7969.95
-    },
-    {
-     "time": 1794912300,
-     "open": 7962.0,
-     "high": 7969.0,
-     "low": 7940.0,
-     "close": 7941.0,
-     "vwap": 7968.04
-    },
-    {
-     "time": 1794913200,
-     "open": 7942.0,
-     "high": 7971.0,
-     "low": 7941.0,
-     "close": 7971.0,
-     "vwap": 7967.0
-    },
-    {
-     "time": 1794914100,
-     "open": 7971.0,
-     "high": 7971.0,
-     "low": 7943.0,
-     "close": 7947.0,
-     "vwap": 7966.34
-    },
-    {
-     "time": 1794915000,
-     "open": 7947.0,
-     "high": 7957.0,
-     "low": 7942.0,
-     "close": 7952.0,
-     "vwap": 7962.3
-    },
-    {
-     "time": 1794915900,
-     "open": 7953.0,
-     "high": 7983.0,
-     "low": 7953.0,
-     "close": 7977.0,
-     "vwap": 7963.12
-    },
-    {
-     "time": 1794916800,
-     "open": 7976.0,
-     "high": 7982.0,
-     "low": 7962.0,
-     "close": 7963.0,
-     "vwap": 7963.64
-    },
-    {
-     "time": 1794917700,
-     "open": 7963.0,
-     "high": 7968.0,
-     "low": 7944.0,
-     "close": 7946.0,
-     "vwap": 7963.24
-    },
-    {
-     "time": 1794918600,
-     "open": 7946.0,
-     "high": 7956.0,
-     "low": 7925.0,
-     "close": 7954.0,
-     "vwap": 7961.06
-    },
-    {
-     "time": 1794919500,
-     "open": 7954.0,
-     "high": 7968.0,
-     "low": 7943.0,
-     "close": 7957.0,
-     "vwap": 7960.88
-    },
-    {
-     "time": 1794920400,
-     "open": 7957.0,
-     "high": 8003.0,
-     "low": 7956.0,
-     "close": 7993.0,
-     "vwap": 7963.06
-    },
-    {
-     "time": 1794921300,
-     "open": 7993.0,
-     "high": 7994.0,
-     "low": 7954.0,
-     "close": 7971.0,
-     "vwap": 7963.58
-    },
-    {
-     "time": 1794922200,
-     "open": 7969.0,
-     "high": 7985.0,
-     "low": 7960.0,
-     "close": 7976.0,
-     "vwap": 7964.68
-    },
-    {
-     "time": 1794923100,
-     "open": 7976.0,
-     "high": 8001.0,
-     "low": 7969.0,
-     "close": 7970.0,
-     "vwap": 7966.41
-    },
-    {
-     "time": 1794924000,
-     "open": 7974.0,
-     "high": 7991.0,
-     "low": 7970.0,
-     "close": 7987.0,
-     "vwap": 7966.86
-    }
-   ],
-   "vwap": 7966.86,
-   "chart_png": "charts/CRUDEOILM_today.png"
+   "ltp": 7994
   }
  },
  "strategies": {
@@ -469,101 +277,64 @@
     "No target",
     "Time exit at 15:10 bar close"
    ]
-  },
-  "SVR_CRUDEOILM": {
-   "name": "A] SVR CRUDEOILM",
-   "market": "CRUDEOILM",
-   "tf": "15min",
-   "in_position": false,
-   "entries_today": 0,
-   "touched": "True",
-   "last_bar": "2026-11-17 14:00:00",
-   "paper_open": null,
-   "entry_checks": [
-    [
-     "Zone S1/PDL touched today",
-     true
-    ],
-    [
-     "Close above S1/PDL top 8,065.0",
-     false
-    ],
-    [
-     "Close above VWAP 7,966.4",
-     true
-    ],
-    [
-     "Close still below CPR BC 8,128.8",
-     true
-    ],
-    [
-     "Entries today < 2",
-     true
-    ]
-   ],
-   "exit_rules": [
-    "Target nearer of R1/PDH 8,308.3 (underlying touch)",
-    "Stop: 15min close below S1/PDL bottom 7,949.3",
-    "Time exit at 15:30 bar close"
-   ]
   }
  },
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25454.3,
-   "chg_pts": 163.2,
-   "chg_pct": 0.65
+   "ltp": 25457.35,
+   "chg_pts": 166.25,
+   "chg_pct": 0.66
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62351.25,
-   "chg_pts": 775.35,
-   "chg_pct": 1.26
+   "ltp": 62372.3,
+   "chg_pts": 796.4,
+   "chg_pct": 1.29
   },
   {
    "name": "SENSEX",
-   "ltp": 82782.21,
-   "chg_pts": 677.42,
-   "chg_pct": 0.83
+   "ltp": 82790.39,
+   "chg_pts": 685.6,
+   "chg_pct": 0.84
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.3,
-   "chg_pts": -0.38,
-   "chg_pct": -2.42
+   "ltp": 15.32,
+   "chg_pts": -0.36,
+   "chg_pct": -2.3
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7983,
-   "chg_pts": -96,
-   "chg_pct": -1.19
+   "ltp": 7992,
+   "chg_pts": -87,
+   "chg_pct": -1.08
   },
   {
    "name": "GOLD",
-   "ltp": 134458,
-   "chg_pts": -81,
-   "chg_pct": -0.06
+   "ltp": 134495,
+   "chg_pts": -44,
+   "chg_pct": -0.03
   },
   {
    "name": "SILVER",
-   "ltp": 169560,
-   "chg_pts": 1697,
-   "chg_pct": 1.01
+   "ltp": 169601,
+   "chg_pts": 1738,
+   "chg_pct": 1.04
   }
  ],
  "oc": {
-  "spot": 25453.8,
+  "spot": 25456.5,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 42218605,
-  "res_pct": 0.18,
+  "res_oi": 42801395,
+  "res_pct": 0.17,
   "sup_strike": 25400.0,
-  "sup_oi": 35371245,
-  "sup_pct": 0.21,
+  "sup_oi": 35757930,
+  "sup_pct": 0.22,
   "max_pain": 25400.0,
-  "mp_pct": -0.21,
-  "pcr": 1.132,
+  "mp_pct": -0.22,
+  "pcr": 1.134,
   "suggests": "Balanced"
  },
  "trades": [],
@@ -655,8 +426,10 @@
   "quotes_ok": true,
   "oc_ok": true,
   "nifty_levels": true,
-  "crude_levels": true,
+  "crude_levels": false,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "CRUDEOILM candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Read timed out. (read timeout=15)"
+ ]
 }

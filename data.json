@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 10:33:00",
+ "updated": "2026-11-17 10:34:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25375.8,
+   "ltp": 25383.25,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -76,19 +76,19 @@
      "time": 1794911400,
      "open": 25401.8,
      "high": 25405.6,
-     "low": 25373.8,
-     "close": 25374.45,
-     "vwap": 25353.8
+     "low": 25371.6,
+     "close": 25382.6,
+     "vwap": 25353.99
     }
    ],
-   "vwap": 25353.8,
+   "vwap": 25353.99,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7964,
+   "ltp": 7962,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -162,12 +162,12 @@
      "time": 1794911400,
      "open": 7969.0,
      "high": 7973.0,
-     "low": 7964.0,
+     "low": 7962.0,
      "close": 7964.0,
-     "vwap": 7970.66
+     "vwap": 7970.64
     }
    ],
-   "vwap": 7970.66,
+   "vwap": 7970.64,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -287,27 +287,27 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25375.8,
-   "chg_pts": 84.7,
-   "chg_pct": 0.33
+   "ltp": 25383.25,
+   "chg_pts": 92.15,
+   "chg_pct": 0.36
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62214.65,
-   "chg_pts": 638.75,
-   "chg_pct": 1.04
+   "ltp": 62223.25,
+   "chg_pts": 647.35,
+   "chg_pct": 1.05
   },
   {
    "name": "SENSEX",
-   "ltp": 82458.97,
-   "chg_pts": 354.18,
+   "ltp": 82456.15,
+   "chg_pts": 351.36,
    "chg_pct": 0.43
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.19,
-   "chg_pts": -0.49,
-   "chg_pct": -3.13
+   "ltp": 15.21,
+   "chg_pts": -0.47,
+   "chg_pct": -3.0
   },
   {
    "name": "CRUDEOIL",
@@ -323,23 +323,23 @@
   },
   {
    "name": "SILVER",
-   "ltp": 169331,
-   "chg_pts": 1468,
-   "chg_pct": 0.87
+   "ltp": 169311,
+   "chg_pts": 1448,
+   "chg_pct": 0.86
   }
  ],
  "oc": {
-  "spot": 25374.9,
+  "spot": 25383,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 25194650,
-  "res_pct": 0.49,
+  "res_oi": 25103455,
+  "res_pct": 0.46,
   "sup_strike": 25300.0,
-  "sup_oi": 43311255,
-  "sup_pct": 0.3,
+  "sup_oi": 42715725,
+  "sup_pct": 0.33,
   "max_pain": 25400.0,
-  "mp_pct": 0.1,
-  "pcr": 1.485,
+  "mp_pct": 0.07,
+  "pcr": 1.467,
   "suggests": "Suggests CALL"
  },
  "trades": [],

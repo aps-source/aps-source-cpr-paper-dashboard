@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 15:36:00",
+ "updated": "2026-11-17 15:37:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8036,
+   "ltp": 8039,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -473,13 +473,13 @@
     {
      "time": 1794929400,
      "open": 8026.0,
-     "high": 8040.0,
+     "high": 8042.0,
      "low": 8021.0,
-     "close": 8038.0,
-     "vwap": 7981.99
+     "close": 8042.0,
+     "vwap": 7982.15
     }
    ],
-   "vwap": 7981.99,
+   "vwap": 7982.15,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -623,35 +623,35 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8036,
-   "chg_pts": -43,
-   "chg_pct": -0.53
+   "ltp": 8040,
+   "chg_pts": -39,
+   "chg_pct": -0.48
   },
   {
    "name": "GOLD",
-   "ltp": 134285,
-   "chg_pts": -254,
-   "chg_pct": -0.19
+   "ltp": 134222,
+   "chg_pts": -317,
+   "chg_pct": -0.24
   },
   {
    "name": "SILVER",
-   "ltp": 169262,
-   "chg_pts": 1399,
-   "chg_pct": 0.83
+   "ltp": 169170,
+   "chg_pts": 1307,
+   "chg_pct": 0.78
   }
  ],
  "oc": {
   "spot": 25387.4,
   "expiry": "2026-11-17",
   "res_strike": 25400.0,
-  "res_oi": 19578650,
+  "res_oi": 19347965,
   "res_pct": 0.05,
   "sup_strike": 25350.0,
-  "sup_oi": 15326675,
+  "sup_oi": 15191150,
   "sup_pct": 0.15,
   "max_pain": 25400.0,
   "mp_pct": 0.05,
-  "pcr": 1.013,
+  "pcr": 1.01,
   "suggests": "Balanced"
  },
  "trades": [],

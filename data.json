@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:39:00",
+ "updated": "2026-11-17 13:40:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25413.65,
+   "ltp": 25410.75,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -173,18 +173,18 @@
      "open": 25387.8,
      "high": 25421.4,
      "low": 25374.05,
-     "close": 25421.05,
-     "vwap": 25405.46
+     "close": 25411.4,
+     "vwap": 25405.47
     }
    ],
-   "vwap": 25405.46,
+   "vwap": 25405.47,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7973,
+   "ltp": 7974,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -355,11 +355,11 @@
      "open": 7969.0,
      "high": 7985.0,
      "low": 7960.0,
-     "close": 7973.0,
-     "vwap": 7964.3
+     "close": 7974.0,
+     "vwap": 7964.39
     }
    ],
-   "vwap": 7964.3,
+   "vwap": 7964.39,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -479,61 +479,47 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25413.65,
-   "chg_pts": 122.55,
-   "chg_pct": 0.48
+   "ltp": 25410.75,
+   "chg_pts": 119.65,
+   "chg_pct": 0.47
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62254.9,
-   "chg_pts": 679.0,
-   "chg_pct": 1.1
+   "ltp": 62257.7,
+   "chg_pts": 681.8,
+   "chg_pct": 1.11
   },
   {
    "name": "SENSEX",
-   "ltp": 82638.72,
-   "chg_pts": 533.93,
+   "ltp": 82637.39,
+   "chg_pts": 532.6,
    "chg_pct": 0.65
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.36,
-   "chg_pts": -0.32,
-   "chg_pct": -2.04
+   "ltp": 15.38,
+   "chg_pts": -0.3,
+   "chg_pct": -1.91
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7978,
-   "chg_pts": -101,
-   "chg_pct": -1.25
+   "ltp": 7974,
+   "chg_pts": -105,
+   "chg_pct": -1.3
   },
   {
    "name": "GOLD",
-   "ltp": 134605,
-   "chg_pts": 66,
-   "chg_pct": 0.05
+   "ltp": 134560,
+   "chg_pts": 21,
+   "chg_pct": 0.02
   },
   {
    "name": "SILVER",
-   "ltp": 169800,
-   "chg_pts": 1937,
-   "chg_pct": 1.15
+   "ltp": 169751,
+   "chg_pts": 1888,
+   "chg_pct": 1.12
   }
  ],
- "oc": {
-  "spot": 25419.4,
-  "expiry": "2026-11-17",
-  "res_strike": 25500.0,
-  "res_oi": 39363025,
-  "res_pct": 0.32,
-  "sup_strike": 25300.0,
-  "sup_oi": 32765525,
-  "sup_pct": 0.47,
-  "max_pain": 25400.0,
-  "mp_pct": -0.08,
-  "pcr": 1.032,
-  "suggests": "Balanced"
- },
  "trades": [],
  "signals": [
   {
@@ -621,10 +607,12 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Read timed out. (read timeout=15)"
+ ]
 }

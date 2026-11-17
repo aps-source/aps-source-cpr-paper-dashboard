@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 15:28:00",
+ "updated": "2026-11-17 15:29:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25413,
+   "ltp": 25387.4,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8033,
+   "ltp": 8031,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -467,11 +467,11 @@
      "open": 8027.0,
      "high": 8037.0,
      "low": 8022.0,
-     "close": 8033.0,
-     "vwap": 7980.22
+     "close": 8029.0,
+     "vwap": 7980.33
     }
    ],
-   "vwap": 7980.22,
+   "vwap": 7980.33,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -591,21 +591,21 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25413,
-   "chg_pts": 121.9,
-   "chg_pct": 0.48
+   "ltp": 25387.4,
+   "chg_pts": 96.3,
+   "chg_pct": 0.38
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62322.85,
-   "chg_pts": 746.95,
-   "chg_pct": 1.21
+   "ltp": 62273.25,
+   "chg_pts": 697.35,
+   "chg_pct": 1.13
   },
   {
    "name": "SENSEX",
-   "ltp": 82630.61,
-   "chg_pts": 131.55,
-   "chg_pct": 0.16
+   "ltp": 82532.19,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
   },
   {
    "name": "INDIA VIX",
@@ -615,9 +615,9 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8030,
-   "chg_pts": -49,
-   "chg_pct": -0.61
+   "ltp": 8032,
+   "chg_pts": -47,
+   "chg_pct": -0.58
   },
   {
    "name": "GOLD",
@@ -627,23 +627,23 @@
   },
   {
    "name": "SILVER",
-   "ltp": 169477,
-   "chg_pts": 1614,
-   "chg_pct": 0.96
+   "ltp": 169462,
+   "chg_pts": 1599,
+   "chg_pct": 0.95
   }
  ],
  "oc": {
   "spot": 25387.4,
   "expiry": "2026-11-17",
   "res_strike": 25400.0,
-  "res_oi": 24616930,
+  "res_oi": 24116820,
   "res_pct": 0.05,
   "sup_strike": 25400.0,
-  "sup_oi": 18691335,
+  "sup_oi": 17742660,
   "sup_pct": -0.05,
   "max_pain": 25400.0,
   "mp_pct": 0.05,
-  "pcr": 0.993,
+  "pcr": 1.019,
   "suggests": "Balanced"
  },
  "trades": [],

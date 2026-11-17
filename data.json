@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 11:18:00",
+ "updated": "2026-11-17 11:19:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,109 +10,13 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25442,
-   "prev_day": {
-    "date": "2026-11-16",
-    "high": 25337.6,
-    "low": 25172.1,
-    "close": 25291.1
-   },
-   "levels": {
-    "P": 25266.93,
-    "TC": 25279.02,
-    "BC": 25254.85,
-    "R1": 25361.77,
-    "S1": 25196.27,
-    "PDH": 25337.6,
-    "PDL": 25172.1,
-    "UP": 25361.77,
-    "UPLO": 25337.6,
-    "DN": 25172.1,
-    "DNHI": 25196.27,
-    "width_pct": 0.1
-   },
-   "bars": [
-    {
-     "time": 1794906900,
-     "open": 25277.3,
-     "high": 25358.05,
-     "low": 25267.3,
-     "close": 25321.85,
-     "vwap": 25330.2
-    },
-    {
-     "time": 1794907800,
-     "open": 25322.6,
-     "high": 25349.2,
-     "low": 25292.85,
-     "close": 25347.35,
-     "vwap": 25327.19
-    },
-    {
-     "time": 1794908700,
-     "open": 25348.95,
-     "high": 25382.5,
-     "low": 25345.9,
-     "close": 25372.6,
-     "vwap": 25336.66
-    },
-    {
-     "time": 1794909600,
-     "open": 25372.45,
-     "high": 25386.75,
-     "low": 25359.25,
-     "close": 25379.2,
-     "vwap": 25344.68
-    },
-    {
-     "time": 1794910500,
-     "open": 25381.0,
-     "high": 25416.85,
-     "low": 25376.35,
-     "close": 25400.15,
-     "vwap": 25352.9
-    },
-    {
-     "time": 1794911400,
-     "open": 25401.8,
-     "high": 25405.6,
-     "low": 25371.6,
-     "close": 25389.95,
-     "vwap": 25356.97
-    },
-    {
-     "time": 1794912300,
-     "open": 25391.95,
-     "high": 25416.95,
-     "low": 25381.25,
-     "close": 25404.8,
-     "vwap": 25362.51
-    },
-    {
-     "time": 1794913200,
-     "open": 25406.15,
-     "high": 25436.75,
-     "low": 25402.65,
-     "close": 25425.15,
-     "vwap": 25367.58
-    },
-    {
-     "time": 1794914100,
-     "open": 25426.4,
-     "high": 25444.2,
-     "low": 25423.8,
-     "close": 25442.0,
-     "vwap": 25369.14
-    }
-   ],
-   "vwap": 25369.14,
-   "chart_png": "charts/NIFTY_today.png"
+   "ltp": 25448.6
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7956,
+   "ltp": 7948,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -210,90 +114,16 @@
      "time": 1794914100,
      "open": 7971.0,
      "high": 7971.0,
-     "low": 7956.0,
-     "close": 7956.0,
-     "vwap": 7966.93
+     "low": 7948.0,
+     "close": 7949.0,
+     "vwap": 7966.79
     }
    ],
-   "vwap": 7966.93,
+   "vwap": 7966.79,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
  "strategies": {
-  "SVR_NIFTY": {
-   "name": "A] SVR NIFTY",
-   "market": "NIFTY",
-   "tf": "15min",
-   "in_position": false,
-   "entries_today": 0,
-   "touched": "False",
-   "last_bar": "2026-11-17 11:15:00",
-   "paper_open": null,
-   "entry_checks": [
-    [
-     "Zone S1/PDL touched today",
-     true
-    ],
-    [
-     "Close above S1/PDL top 25,196.3",
-     true
-    ],
-    [
-     "Close above VWAP 25,367.6",
-     true
-    ],
-    [
-     "Close still below CPR BC 25,254.8",
-     false
-    ],
-    [
-     "Entries today < 2",
-     true
-    ]
-   ],
-   "exit_rules": [
-    "Target CPR BC 25,254.8 (underlying touch)",
-    "Stop: 15min close below S1/PDL bottom 25,172.1",
-    "Time exit at 15:10 bar close"
-   ]
-  },
-  "RVR_NIFTY": {
-   "name": "B] RVR NIFTY",
-   "market": "NIFTY",
-   "tf": "60min",
-   "in_position": false,
-   "entries_today": 0,
-   "touched": "True",
-   "last_bar": "2026-11-17 11:15:00",
-   "paper_open": null,
-   "entry_checks": [
-    [
-     "CPR width < 0.20% (now 0.096%)",
-     true
-    ],
-    [
-     "CPR BC 25,254.8 touched today",
-     true
-    ],
-    [
-     "Close below S1/PDL bottom 25,172.1",
-     false
-    ],
-    [
-     "Close below VWAP 25,367.6",
-     false
-    ],
-    [
-     "Entries today < 2",
-     true
-    ]
-   ],
-   "exit_rules": [
-    "Stop: 60-min close above S1/PDL top 25,196.3",
-    "No target",
-    "Time exit at 15:10 bar close"
-   ]
-  },
   "SVR_CRUDEOILM": {
    "name": "A] SVR CRUDEOILM",
    "market": "CRUDEOILM",
@@ -335,59 +165,59 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25442,
-   "chg_pts": 150.9,
-   "chg_pct": 0.6
+   "ltp": 25448.6,
+   "chg_pts": 157.5,
+   "chg_pct": 0.62
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62302,
-   "chg_pts": 726.1,
-   "chg_pct": 1.18
+   "ltp": 62334.45,
+   "chg_pts": 758.55,
+   "chg_pct": 1.23
   },
   {
    "name": "SENSEX",
-   "ltp": 82681.69,
-   "chg_pts": 576.9,
-   "chg_pct": 0.7
+   "ltp": 82691.66,
+   "chg_pts": 586.87,
+   "chg_pct": 0.71
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.47,
-   "chg_pts": -0.21,
-   "chg_pct": -1.34
+   "ltp": 15.48,
+   "chg_pts": -0.2,
+   "chg_pct": -1.28
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7956,
-   "chg_pts": -123,
-   "chg_pct": -1.52
+   "ltp": 7949,
+   "chg_pts": -130,
+   "chg_pct": -1.61
   },
   {
    "name": "GOLD",
-   "ltp": 135117,
-   "chg_pts": 578,
-   "chg_pct": 0.43
+   "ltp": 135054,
+   "chg_pts": 515,
+   "chg_pct": 0.38
   },
   {
    "name": "SILVER",
-   "ltp": 170632,
-   "chg_pts": 2769,
-   "chg_pct": 1.65
+   "ltp": 170346,
+   "chg_pts": 2483,
+   "chg_pct": 1.48
   }
  ],
  "oc": {
-  "spot": 25442.7,
+  "spot": 25448.5,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 26440115,
-  "res_pct": 0.23,
+  "res_oi": 25590695,
+  "res_pct": 0.2,
   "sup_strike": 25300.0,
-  "sup_oi": 42638050,
-  "sup_pct": 0.56,
+  "sup_oi": 42197415,
+  "sup_pct": 0.58,
   "max_pain": 25400.0,
-  "mp_pct": -0.17,
-  "pcr": 1.562,
+  "mp_pct": -0.19,
+  "pcr": 1.598,
   "suggests": "Suggests CALL"
  },
  "trades": [],
@@ -478,9 +308,11 @@
   "crude_window": true,
   "quotes_ok": true,
   "oc_ok": true,
-  "nifty_levels": true,
+  "nifty_levels": false,
   "crude_levels": true,
-  "rvr_narrow_day": "True"
+  "rvr_narrow_day": false
  },
- "errors": []
+ "errors": [
+  "NIFTY candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C450F72990>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ]
 }

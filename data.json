@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 12:10:00",
+ "updated": "2026-11-17 12:11:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -125,18 +125,18 @@
      "open": 25484.65,
      "high": 25499.9,
      "low": 25472.25,
-     "close": 25488.8,
-     "vwap": 25391.37
+     "close": 25486.75,
+     "vwap": 25392.16
     }
    ],
-   "vwap": 25391.37,
+   "vwap": 25392.16,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7975,
+   "ltp": 7969,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -259,11 +259,11 @@
      "open": 7976.0,
      "high": 7982.0,
      "low": 7968.0,
-     "close": 7977.0,
-     "vwap": 7963.52
+     "close": 7969.0,
+     "vwap": 7963.56
     }
    ],
-   "vwap": 7963.52,
+   "vwap": 7963.56,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -389,53 +389,53 @@
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62373.1,
-   "chg_pts": 797.2,
-   "chg_pct": 1.29
+   "ltp": 62365.8,
+   "chg_pts": 789.9,
+   "chg_pct": 1.28
   },
   {
    "name": "SENSEX",
-   "ltp": 82838.68,
-   "chg_pts": 733.89,
-   "chg_pct": 0.89
+   "ltp": 82851.8,
+   "chg_pts": 747.01,
+   "chg_pct": 0.91
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.37,
-   "chg_pts": -0.31,
-   "chg_pct": -1.98
+   "ltp": 15.38,
+   "chg_pts": -0.3,
+   "chg_pct": -1.91
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7977,
-   "chg_pts": -102,
-   "chg_pct": -1.26
+   "ltp": 7972,
+   "chg_pts": -107,
+   "chg_pct": -1.32
   },
   {
    "name": "GOLD",
-   "ltp": 134770,
-   "chg_pts": 231,
-   "chg_pct": 0.17
+   "ltp": 134800,
+   "chg_pts": 261,
+   "chg_pct": 0.19
   },
   {
    "name": "SILVER",
-   "ltp": 169307,
-   "chg_pts": 1444,
-   "chg_pct": 0.86
+   "ltp": 169340,
+   "chg_pts": 1477,
+   "chg_pct": 0.88
   }
  ],
  "oc": {
-  "spot": 25488.5,
+  "spot": 25488.2,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 26889720,
+  "res_oi": 26675610,
   "res_pct": 0.05,
   "sup_strike": 25400.0,
-  "sup_oi": 38449060,
+  "sup_oi": 38972245,
   "sup_pct": 0.35,
   "max_pain": 25450.0,
   "mp_pct": -0.15,
-  "pcr": 1.713,
+  "pcr": 1.716,
   "suggests": "Suggests CALL"
  },
  "trades": [],

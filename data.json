@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 09:22:00",
+ "updated": "2026-11-17 09:23:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25325,
+   "ltp": 25329.2,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -37,18 +37,18 @@
      "open": 25277.3,
      "high": 25358.05,
      "low": 25267.3,
-     "close": 25326.7,
-     "vwap": 25331.72
+     "close": 25329.0,
+     "vwap": 25331.45
     }
    ],
-   "vwap": 25331.72,
+   "vwap": 25331.45,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7966,
+   "ltp": 7965,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -83,11 +83,11 @@
      "open": 7977.0,
      "high": 7978.0,
      "low": 7959.0,
-     "close": 7965.0,
-     "vwap": 7979.1
+     "close": 7968.0,
+     "vwap": 7978.84
     }
    ],
-   "vwap": 7979.1,
+   "vwap": 7978.84,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -165,61 +165,47 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25325,
-   "chg_pts": 33.9,
-   "chg_pct": 0.13
+   "ltp": 25329.2,
+   "chg_pts": 38.1,
+   "chg_pct": 0.15
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 61757.6,
-   "chg_pts": 181.7,
-   "chg_pct": 0.3
+   "ltp": 61810.2,
+   "chg_pts": 234.3,
+   "chg_pct": 0.38
   },
   {
    "name": "SENSEX",
-   "ltp": 82223.81,
-   "chg_pts": 119.02,
-   "chg_pct": 0.14
+   "ltp": 82225.2,
+   "chg_pts": 120.41,
+   "chg_pct": 0.15
   },
   {
    "name": "INDIA VIX",
-   "ltp": 15.13,
-   "chg_pts": -0.55,
-   "chg_pct": -3.51
+   "ltp": 15.33,
+   "chg_pts": -0.35,
+   "chg_pct": -2.23
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 7969,
-   "chg_pts": -110,
-   "chg_pct": -1.36
+   "ltp": 7965,
+   "chg_pts": -114,
+   "chg_pct": -1.41
   },
   {
    "name": "GOLD",
-   "ltp": 134922,
-   "chg_pts": 383,
-   "chg_pct": 0.28
+   "ltp": 134852,
+   "chg_pts": 313,
+   "chg_pct": 0.23
   },
   {
    "name": "SILVER",
-   "ltp": 168753,
-   "chg_pts": 890,
-   "chg_pct": 0.53
+   "ltp": 168694,
+   "chg_pts": 831,
+   "chg_pct": 0.5
   }
  ],
- "oc": {
-  "spot": 25325.2,
-  "expiry": "2026-11-17",
-  "res_strike": 26000.0,
-  "res_oi": 18565365,
-  "res_pct": 2.66,
-  "sup_strike": 25300.0,
-  "sup_oi": 21675355,
-  "sup_pct": 0.1,
-  "max_pain": 25300.0,
-  "mp_pct": -0.1,
-  "pcr": 1.089,
-  "suggests": "Balanced"
- },
  "trades": [],
  "signals": [
   {
@@ -307,10 +293,12 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "oc: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/optionchain"
+ ]
 }

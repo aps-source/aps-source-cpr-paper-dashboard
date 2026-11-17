@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 15:06:00",
+ "updated": "2026-11-17 15:07:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25404.85,
+   "ltp": 25402.8,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -221,18 +221,18 @@
      "open": 25413.0,
      "high": 25420.5,
      "low": 25393.05,
-     "close": 25403.2,
-     "vwap": 25414.09
+     "close": 25401.4,
+     "vwap": 25414.04
     }
    ],
-   "vwap": 25414.09,
+   "vwap": 25414.04,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 8054,
+   "ltp": 8051,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -449,13 +449,13 @@
     {
      "time": 1794927600,
      "open": 8036.0,
-     "high": 8058.0,
+     "high": 8059.0,
      "low": 8031.0,
-     "close": 8057.0,
-     "vwap": 7975.97
+     "close": 8048.0,
+     "vwap": 7976.38
     }
    ],
-   "vwap": 7975.97,
+   "vwap": 7976.38,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -575,21 +575,21 @@
  "indices": [
   {
    "name": "NIFTY",
-   "ltp": 25404.85,
-   "chg_pts": 113.75,
-   "chg_pct": 0.45
+   "ltp": 25402.8,
+   "chg_pts": 111.7,
+   "chg_pct": 0.44
   },
   {
    "name": "BANKNIFTY",
-   "ltp": 62241.9,
-   "chg_pts": 666.0,
-   "chg_pct": 1.08
+   "ltp": 62231.1,
+   "chg_pts": 655.2,
+   "chg_pct": 1.06
   },
   {
    "name": "SENSEX",
-   "ltp": 82596.12,
-   "chg_pts": 491.33,
-   "chg_pct": 0.6
+   "ltp": 82586.39,
+   "chg_pts": 481.6,
+   "chg_pct": 0.59
   },
   {
    "name": "INDIA VIX",
@@ -599,37 +599,23 @@
   },
   {
    "name": "CRUDEOIL",
-   "ltp": 8052,
-   "chg_pts": -27,
-   "chg_pct": -0.33
+   "ltp": 8049,
+   "chg_pts": -30,
+   "chg_pct": -0.37
   },
   {
    "name": "GOLD",
-   "ltp": 134330,
-   "chg_pts": -209,
+   "ltp": 134329,
+   "chg_pts": -210,
    "chg_pct": -0.16
   },
   {
    "name": "SILVER",
-   "ltp": 169098,
-   "chg_pts": 1235,
-   "chg_pct": 0.74
+   "ltp": 169144,
+   "chg_pts": 1281,
+   "chg_pct": 0.76
   }
  ],
- "oc": {
-  "spot": 25404.2,
-  "expiry": "2026-11-17",
-  "res_strike": 25500.0,
-  "res_oi": 35967945,
-  "res_pct": 0.38,
-  "sup_strike": 25400.0,
-  "sup_oi": 33760285,
-  "sup_pct": 0.02,
-  "max_pain": 25400.0,
-  "mp_pct": -0.02,
-  "pcr": 1.082,
-  "suggests": "Balanced"
- },
  "trades": [],
  "signals": [
   {
@@ -717,10 +703,12 @@
   "nifty_window": true,
   "crude_window": true,
   "quotes_ok": true,
-  "oc_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
- "errors": []
+ "errors": [
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C45252BED0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+ ]
 }

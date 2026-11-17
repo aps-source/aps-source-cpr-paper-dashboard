@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 12:53:00",
+ "updated": "2026-11-17 12:54:03",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -149,11 +149,11 @@
      "open": 25461.4,
      "high": 25464.95,
      "low": 25444.0,
-     "close": 25458.25,
-     "vwap": 25406.81
+     "close": 25459.95,
+     "vwap": 25406.9
     }
    ],
-   "vwap": 25406.81,
+   "vwap": 25406.9,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -307,11 +307,11 @@
      "open": 7954.0,
      "high": 7966.0,
      "low": 7943.0,
-     "close": 7948.0,
-     "vwap": 7960.88
+     "close": 7947.0,
+     "vwap": 7960.87
     }
    ],
-   "vwap": 7960.88,
+   "vwap": 7960.87,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -429,16 +429,16 @@
   }
  },
  "oc": {
-  "spot": 25458.0,
+  "spot": 25459.2,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 36706345,
+  "res_oi": 36946325,
   "res_pct": 0.16,
   "sup_strike": 25400.0,
-  "sup_oi": 39318435,
+  "sup_oi": 39621465,
   "sup_pct": 0.23,
   "max_pain": 25450.0,
-  "mp_pct": -0.03,
+  "mp_pct": -0.04,
   "pcr": 1.482,
   "suggests": "Suggests CALL"
  },
@@ -535,6 +535,6 @@
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Read timed out. (read timeout=15)"
  ]
 }

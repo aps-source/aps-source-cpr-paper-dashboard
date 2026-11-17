@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 11:44:00",
+ "updated": "2026-11-17 11:45:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -107,13 +107,21 @@
     {
      "time": 1794915000,
      "open": 25438.3,
-     "high": 25451.45,
+     "high": 25454.55,
      "low": 25433.2,
-     "close": 25450.9,
-     "vwap": 25379.25
+     "close": 25453.0,
+     "vwap": 25379.41
+    },
+    {
+     "time": 1794915900,
+     "open": 25454.5,
+     "high": 25455.6,
+     "low": 25453.6,
+     "close": 25454.2,
+     "vwap": 25379.52
     }
    ],
-   "vwap": 25379.25,
+   "vwap": 25379.52,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -227,11 +235,19 @@
      "open": 7947.0,
      "high": 7957.0,
      "low": 7942.0,
-     "close": 7948.0,
-     "vwap": 7962.32
+     "close": 7952.0,
+     "vwap": 7962.3
+    },
+    {
+     "time": 1794915900,
+     "open": 7953.0,
+     "high": 7955.0,
+     "low": 7953.0,
+     "close": 7953.0,
+     "vwap": 7962.3
     }
    ],
-   "vwap": 7962.32,
+   "vwap": 7962.3,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -349,17 +365,17 @@
   }
  },
  "oc": {
-  "spot": 25450.5,
+  "spot": 25454.5,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 29759080,
-  "res_pct": 0.19,
+  "res_oi": 29797365,
+  "res_pct": 0.18,
   "sup_strike": 25300.0,
-  "sup_oi": 42409250,
-  "sup_pct": 0.59,
+  "sup_oi": 41992795,
+  "sup_pct": 0.61,
   "max_pain": 25400.0,
-  "mp_pct": -0.2,
-  "pcr": 1.567,
+  "mp_pct": -0.21,
+  "pcr": 1.553,
   "suggests": "Suggests CALL"
  },
  "trades": [],

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 11:15:00",
+ "updated": "2026-11-17 11:16:01",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -99,13 +99,13 @@
     {
      "time": 1794914100,
      "open": 25426.4,
-     "high": 25432.15,
+     "high": 25435.5,
      "low": 25423.8,
-     "close": 25431.5,
-     "vwap": 25367.67
+     "close": 25434.95,
+     "vwap": 25368.2
     }
    ],
-   "vwap": 25367.67,
+   "vwap": 25368.2,
    "chart_png": "charts/NIFTY_today.png"
   },
   "CRUDEOILM": {
@@ -210,12 +210,12 @@
      "time": 1794914100,
      "open": 7971.0,
      "high": 7971.0,
-     "low": 7968.0,
-     "close": 7968.0,
-     "vwap": 7967.0
+     "low": 7962.0,
+     "close": 7965.0,
+     "vwap": 7966.98
     }
    ],
-   "vwap": 7967.0,
+   "vwap": 7966.98,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -227,7 +227,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "False",
-   "last_bar": "2026-11-17 11:00:00",
+   "last_bar": "2026-11-17 11:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -239,7 +239,7 @@
      true
     ],
     [
-     "Close above VWAP 25,362.5",
+     "Close above VWAP 25,367.6",
      true
     ],
     [
@@ -264,7 +264,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "True",
-   "last_bar": "2026-11-17 10:15:00",
+   "last_bar": "2026-11-17 11:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -280,7 +280,7 @@
      false
     ],
     [
-     "Close below VWAP 25,344.7",
+     "Close below VWAP 25,367.6",
      false
     ],
     [
@@ -301,7 +301,7 @@
    "in_position": false,
    "entries_today": 0,
    "touched": "True",
-   "last_bar": "2026-11-17 11:00:00",
+   "last_bar": "2026-11-17 11:15:00",
    "paper_open": null,
    "entry_checks": [
     [
@@ -313,8 +313,8 @@
      false
     ],
     [
-     "Close above VWAP 7,968.0",
-     false
+     "Close above VWAP 7,967.0",
+     true
     ],
     [
      "Close still below CPR BC 8,128.8",
@@ -333,17 +333,17 @@
   }
  },
  "oc": {
-  "spot": 25430.9,
+  "spot": 25434.7,
   "expiry": "2026-11-17",
   "res_strike": 25500.0,
-  "res_oi": 27953575,
-  "res_pct": 0.27,
+  "res_oi": 28433015,
+  "res_pct": 0.26,
   "sup_strike": 25300.0,
-  "sup_oi": 43716465,
-  "sup_pct": 0.51,
+  "sup_oi": 43724590,
+  "sup_pct": 0.53,
   "max_pain": 25400.0,
-  "mp_pct": -0.12,
-  "pcr": 1.508,
+  "mp_pct": -0.14,
+  "pcr": 1.507,
   "suggests": "Suggests CALL"
  },
  "trades": [],

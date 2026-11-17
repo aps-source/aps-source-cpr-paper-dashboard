@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:31:01",
+ "updated": "2026-11-17 13:32:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,60 +10,16 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": 25385.8
+   "ltp": null
   },
   "CRUDEOILM": {
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": 7969
+   "ltp": null
   }
  },
  "strategies": {},
- "indices": [
-  {
-   "name": "NIFTY",
-   "ltp": 25385.8,
-   "chg_pts": 94.7,
-   "chg_pct": 0.37
-  },
-  {
-   "name": "BANKNIFTY",
-   "ltp": 62207.35,
-   "chg_pts": 631.45,
-   "chg_pct": 1.03
-  },
-  {
-   "name": "SENSEX",
-   "ltp": 82556.77,
-   "chg_pts": 451.98,
-   "chg_pct": 0.55
-  },
-  {
-   "name": "INDIA VIX",
-   "ltp": 15.39,
-   "chg_pts": -0.29,
-   "chg_pct": -1.85
-  },
-  {
-   "name": "CRUDEOIL",
-   "ltp": 7971,
-   "chg_pts": -108,
-   "chg_pct": -1.34
-  },
-  {
-   "name": "GOLD",
-   "ltp": 134715,
-   "chg_pts": 176,
-   "chg_pct": 0.13
-  },
-  {
-   "name": "SILVER",
-   "ltp": 170000,
-   "chg_pts": 2137,
-   "chg_pct": 1.27
-  }
- ],
  "trades": [],
  "signals": [
   {
@@ -150,15 +106,16 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": true,
+  "quotes_ok": false,
   "oc_ok": false,
   "nifty_levels": false,
   "crude_levels": false,
   "rvr_narrow_day": false
  },
  "errors": [
-  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Read timed out. (read timeout=15)",
-  "NIFTY candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4530D34D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
-  "CRUDEOILM candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4530D3D90>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
+  "quotes: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/marketfeed/quote (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4530D3750>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4530D39D0>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "NIFTY candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4530D1310>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))",
+  "CRUDEOILM candles: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/charts/intraday (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C4530D0410>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ]
 }

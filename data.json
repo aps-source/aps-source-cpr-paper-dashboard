@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 15:34:00",
+ "updated": "2026-11-17 15:35:00",
  "project": "Project CPR",
  "windows": {
   "NIFTY": "09:00-15:40",
@@ -10,7 +10,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "NIFTY 50 index",
-   "ltp": null,
+   "ltp": 25387.4,
    "prev_day": {
     "date": "2026-11-16",
     "high": 25337.6,
@@ -240,7 +240,7 @@
    "live": true,
    "window": "09:00-15:40",
    "underlying": "CRUDEOILM NOV FUT",
-   "ltp": null,
+   "ltp": 8035,
    "prev_day": {
     "date": "2026-11-16",
     "high": 8424.0,
@@ -475,11 +475,11 @@
      "open": 8026.0,
      "high": 8039.0,
      "low": 8021.0,
-     "close": 8037.0,
-     "vwap": 7981.59
+     "close": 8039.0,
+     "vwap": 7981.85
     }
    ],
-   "vwap": 7981.59,
+   "vwap": 7981.85,
    "chart_png": "charts/CRUDEOILM_today.png"
   }
  },
@@ -596,20 +596,50 @@
    ]
   }
  },
- "oc": {
-  "spot": 25387.4,
-  "expiry": "2026-11-17",
-  "res_strike": 25400.0,
-  "res_oi": 20274865,
-  "res_pct": 0.05,
-  "sup_strike": 25350.0,
-  "sup_oi": 15639065,
-  "sup_pct": 0.15,
-  "max_pain": 25400.0,
-  "mp_pct": 0.05,
-  "pcr": 1.031,
-  "suggests": "Balanced"
- },
+ "indices": [
+  {
+   "name": "NIFTY",
+   "ltp": 25387.4,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
+  },
+  {
+   "name": "BANKNIFTY",
+   "ltp": 62273.25,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
+  },
+  {
+   "name": "SENSEX",
+   "ltp": 82532.19,
+   "chg_pts": 0.0,
+   "chg_pct": 0.0
+  },
+  {
+   "name": "INDIA VIX",
+   "ltp": 15.49,
+   "chg_pts": -0.19,
+   "chg_pct": -1.21
+  },
+  {
+   "name": "CRUDEOIL",
+   "ltp": 8034,
+   "chg_pts": -45,
+   "chg_pct": -0.56
+  },
+  {
+   "name": "GOLD",
+   "ltp": 134285,
+   "chg_pts": -254,
+   "chg_pct": -0.19
+  },
+  {
+   "name": "SILVER",
+   "ltp": 169272,
+   "chg_pts": 1409,
+   "chg_pct": 0.84
+  }
+ ],
  "trades": [],
  "signals": [
   {
@@ -696,13 +726,13 @@
   "weekday": true,
   "nifty_window": true,
   "crude_window": true,
-  "quotes_ok": false,
-  "oc_ok": true,
+  "quotes_ok": true,
+  "oc_ok": false,
   "nifty_levels": true,
   "crude_levels": true,
   "rvr_narrow_day": "True"
  },
  "errors": [
-  "quotes: 429 Client Error: Too Many Requests for url: https://api.dhan.co/v2/marketfeed/quote"
+  "oc: HTTPSConnectionPool(host='api.dhan.co', port=443): Max retries exceeded with url: /v2/optionchain/expirylist (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x000001C452F3A850>: Failed to resolve 'api.dhan.co' ([Errno 11001] getaddrinfo failed)\"))"
  ]
 }
